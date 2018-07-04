@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import '../App.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div className="flex flex-col font-sans min-h-screen text-grey-darkest">
+  <div>
     <Helmet
-      title="Mythical Fish"
+      title="Mythical Fish | Jake Broughton"
       meta={[
         {
           name: 'description',
@@ -16,7 +16,7 @@ const TemplateWrapper = ({ children }) => (
         }
       ]}
     />
-    <div className="">{children()}</div>
+    {children()}
   </div>
 )
 
