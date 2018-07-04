@@ -3,16 +3,39 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import '../App.css'
+import opengraph from '../images/opengraph.png'
+const title = 'Mythical Fish | Jake Broughton'
+const description =
+  "I'm a (seriously) full-stack software engineer; I architect &amp; build apps for the web and for mobile."
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Mythical Fish | Jake Broughton"
+      title={title}
       meta={[
         {
           name: 'description',
-          content:
-            "I'm a (seriously) full-stack software engineer; I architect &amp; build apps for the web and for mobile."
+          content: description
+        },
+        {
+          name: 'og:url',
+          content: 'https://mythical.fish'
+        },
+        {
+          name: 'og:site_name',
+          content: title
+        },
+        {
+          name: 'og:title',
+          content: title
+        },
+        {
+          name: 'og:description',
+          content: description
+        },
+        {
+          name: 'og:image',
+          content: opengraph
         }
       ]}
     />
