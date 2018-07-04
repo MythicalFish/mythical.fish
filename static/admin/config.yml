@@ -13,7 +13,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Body, name: body, widget: markdown}
-      - {label: Tags, name: tags, widget: list, fields: [{label: URL, name: url, widget: text}, {label: Label, name: label, widget: text}]}
-      - {label: Links, name: links, widget: list, fields: [{label: URL, name: url, widget: text}, {label: Label, name: label, widget: text}]}
+      - {label: Description, name: description, widget: markdown}
+      - {label: Tags, name: tags, widget: list, fields: [{label: URL, name: url, widget: string}, {label: Label, name: label, widget: string}]}
+      - {label: Links, name: links, widget: list, fields: [{label: URL, name: url, widget: string}, {label: Label, name: label, widget: string}]}
       - {label: Position, name: position, widget: number, default: 0}

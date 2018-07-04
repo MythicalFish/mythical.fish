@@ -1,10 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Tailwind'
+    title: 'Mythical Fish'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/content/projects`,
+        name: 'projects'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {}
+    },
+    'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
