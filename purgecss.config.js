@@ -1,6 +1,6 @@
 module.exports = {
   content: ['./src/**/*.js'],
-  css: ['./src/App.css'],
+  css: ['./src/assets/styles/compiled.css'],
   whitelist: ['body', 'html'],
   extractors: [
     {

@@ -4,7 +4,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/content/projects`,
         name: 'projects'
@@ -17,9 +17,9 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: './src/images/favicon.png',
+        logo: './src/assets/images/favicon.png',
         injectHTML: true,
         icons: {
           android: true,
@@ -32,6 +32,12 @@ module.exports = {
           yandex: false,
           windows: false
         }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: './typography.config'
       }
     }
   ]

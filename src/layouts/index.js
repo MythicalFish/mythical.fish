@@ -2,8 +2,9 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import '../App.css'
-import opengraph from '../images/opengraph.png'
+import '../assets/styles/compiled.css'
+import opengraph from '../assets/images/opengraph.png'
+
 const title = 'Mythical Fish | Jake Broughton'
 const description =
   "I'm a (seriously) full-stack software engineer; I architect &amp; build apps for the web and for mobile."

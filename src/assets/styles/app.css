@@ -1,0 +1,6 @@
+@import 'fontawesome/fa-brands';
+@import 'fontawesome/fa-light';
+@import 'fontawesome/fontawesome';
+@import 'base/tailwind';
+@import 'components/tag';
+@import 'components/button';

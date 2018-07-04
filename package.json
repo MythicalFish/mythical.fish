@@ -10,6 +10,7 @@
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-netlify-cms": "^2.0.1",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-typography": "^1.7.19",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "netlify-cms": "^1.9.3",
@@ -22,14 +23,16 @@
     "prettier": "^1.11.1",
     "purgecss": "^1.0.1",
     "react-helmet": "^5.2.0",
-    "tailwindcss": "^0.6.1"
+    "tailwindcss": "^0.6.1",
+    "typography": "^0.16.17",
+    "typography-theme-fairy-gates": "^0.15.11"
   },
   "scripts": {
     "start": "run-p postcss:watch develop",
     "build": "npm run postcss:run && purgecss -c ./purgecss.config.js -o ./src && gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
-    "postcss:run": "postcss src/styles/bundle.css -o src/App.css",
+    "postcss:run": "postcss src/assets/styles/app.css -o src/assets/styles/compiled.css",
     "postcss:watch": "npm run postcss:run -- -w"
   }
 }
