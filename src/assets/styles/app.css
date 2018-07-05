@@ -1,6 +1,8 @@
-@import 'base/tailwind';
 @import 'components/tag';
 @import 'components/button';
+@import 'components/list';
+@import 'components/theme';
 @import 'fontawesome/fa-brands';
-@import 'fontawesome/fa-light';
+@import 'fontawesome/fa-solid';
 @import 'fontawesome/fontawesome';
+@import 'base/tailwind'; /* Keep last */

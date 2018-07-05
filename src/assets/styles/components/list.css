@@ -1,0 +1,35 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  & li {
+    position: relative;
+    @apply px-1 pt-3;
+    margin: 0;
+    display: block;
+    line-height: 1.3;
+    &:before {
+      content: '\f005';
+      font-family: Font Awesome\ 5 Pro;
+      @apply mr-3;
+      font-size: 0.6em;
+      top: -0.15em;
+      position: relative;
+    }
+  }
+  &.check-list {
+    & li {
+      &:before {
+        content: '\f00c';
+        font-size: 1.5em;
+      }
+    }
+  }
+  &.list-colored {
+    & li {
+      &:before {
+        @apply text-blue;
+      }
+    }
+  }
+}
