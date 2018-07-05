@@ -1,10 +1,29 @@
+.tagStyle {
+  @apply inline-block  mx-1 rounded-sm text-blue leading-none text-sm;
+  border: 1px solid config('colors.grey-darker');
+  background: rgba(0, 0, 0, 0.2);
+}
 .tags {
   @apply -mx-1;
 }
 .tag {
-  @apply inline-block px-2 py-1 mx-1 rounded-sm text-blue;
-  line-height: 1;
-  font-size: 0.8rem;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid config('colors.grey-darker');
+  @apply tagStyle px-2 py-1;
+}
+.icon-tag {
+  @apply tagStyle;
+  & > span {
+    @apply flex;
+    & span {
+      @apply p-1;
+      &:first-child {
+        & i {
+          transform: scale(0.8);
+        }
+      }
+      &:not(:first-child) {
+        @apply flex-auto pr-2;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
 }

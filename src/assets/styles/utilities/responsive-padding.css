@@ -1,18 +1,41 @@
 .p-cozy {
-  @apply p-3;
+  @apply px-4;
+  @apply py-8;
+}
+.pt-cozy {
+  @apply pt-8;
+}
+.pb-cozy {
+  @apply pb-8;
+}
+.px-cozy {
+  @apply px-4;
 }
 @screen sm {
   .p-cozy {
     @apply p-8;
+  }
+  .pt-cozy {
+    @apply pt-8;
+  }
+  .pb-cozy {
+    @apply pb-8;
+  }
+  .px-cozy {
+    @apply px-8;
   }
 }
 @screen md {
   .p-cozy {
     @apply p-12;
   }
-}
-@screen lg {
-  .p-cozy {
-    @apply p-16;
+  .pt-cozy {
+    @apply pt-12;
+  }
+  .pb-cozy {
+    @apply pb-12;
+  }
+  .px-cozy {
+    @apply px-12;
   }
 }

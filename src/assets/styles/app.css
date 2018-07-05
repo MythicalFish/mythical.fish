@@ -1,13 +1,13 @@
 @import 'base/general';
 @import 'components/tag';
-@import 'components/project-link';
 @import 'components/button';
 @import 'components/list';
 @import 'components/theme';
-@import 'utilities/responsive-padding';
-@import 'utilities/sizing';
-@import 'utilities/colors';
 @import 'fontawesome/fa-brands';
 @import 'fontawesome/fa-solid';
 @import 'fontawesome/fontawesome';
-@import 'base/tailwind'; /* Keep last */
+@import 'utilities/responsive-padding';
+@import 'base/tailwind'; /* Keep utils last */
+@import 'utilities/sizing';
+@import 'utilities/colors';
+@import 'utilities/shadows';

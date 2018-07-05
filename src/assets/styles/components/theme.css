@@ -1,9 +1,9 @@
 .dark-theme {
-  @apply text-grey-light bg-black;
+  @apply text-grey bg-black;
   & h1,
   & h2,
   & h3,
   & h4 {
-    @apply text-grey-light;
+    @apply text-grey;
   }
 }

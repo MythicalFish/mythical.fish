@@ -2,6 +2,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  @apply pb-3;
   & li {
     position: relative;
     @apply px-1 pt-3;

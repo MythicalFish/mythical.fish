@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
         <div className="w-full lg:w-2/5 flex justify-center lg:overflow-y-scroll">
           <Bio />
         </div>
-        <div className="w-full lg:w-3/5 dark-theme lg:overflow-y-scroll p-cozy">
+        <div className="w-full lg:w-3/5 dark-theme lg:overflow-y-scroll sm:p-6 lg:p-10 xl:p-16">
           <Attributes />
           <div className="pt-10">
             <h2 className="mt-0 mb-6">Portfolio</h2>
