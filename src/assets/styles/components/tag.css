@@ -1,4 +1,10 @@
+.tags {
+  @apply -mx-1;
+}
 .tag {
-  color: red;
-  text-transform: uppercase;
+  @apply inline-block px-2 py-1 mx-1 rounded-sm text-blue;
+  line-height: 1;
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid config('colors.grey-darker');
 }

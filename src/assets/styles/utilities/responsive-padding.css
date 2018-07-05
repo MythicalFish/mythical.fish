@@ -1,0 +1,18 @@
+.p-cozy {
+  @apply p-3;
+}
+@screen sm {
+  .p-cozy {
+    @apply p-8;
+  }
+}
+@screen md {
+  .p-cozy {
+    @apply p-12;
+  }
+}
+@screen lg {
+  .p-cozy {
+    @apply p-16;
+  }
+}
