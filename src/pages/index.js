@@ -5,7 +5,10 @@ const pad = 'p-3 sm:p-8 md:p-12 lg:p-16'
 
 class IndexPage extends React.Component {
   projects = this.props.data.allMarkdownRemark.edges.map(
-    ({ node }) => node.frontmatter
+    ({ node: { html, frontmatter } }) => ({
+      ...frontmatter,
+      html
+    })
   )
   render() {
     return (
@@ -101,9 +104,9 @@ export const indexQuery = graphql`
     allMarkdownRemark {
       edges {
         node {
+          html
           frontmatter {
             title
-            description
             tags {
               label
               url
