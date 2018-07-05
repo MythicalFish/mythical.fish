@@ -101,16 +101,16 @@ export default IndexPage
 
 export const indexQuery = graphql`
   query indexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___position] }
+      filter: { frontmatter: { visible: { eq: true } } }
+    ) {
       edges {
         node {
           html
           frontmatter {
             title
-            tags {
-              label
-              url
-            }
+            tags
             links {
               label
               url
