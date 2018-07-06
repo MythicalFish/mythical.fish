@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Attributes = () => (
-  <div className="flex flex-wrap -mx-3">
-    <div className="w-full md:w-1/2 lg:w-full xl:w-1/2 px-3 sm:mb-6 md:mb-0 lg:mb-6 xl:mb-0">
-      <div className="bg-grey-darkest p-cozy">
-        <h3 className="mt-0 mb-6">Skills</h3>
+  <div className="flex flex-wrap -mx-3 text-center">
+    <div className="w-full md:w-1/2 lg:w-full xl:w-1/2 px-3 mb-3 sm:mb-6 md:mb-0 lg:mb-6 xl:mb-0 flex">
+      <div className="bg-grey-darkest p-cozy flex-auto">
+        <h2 className="mt-0 mb-6">Skills</h2>
         <div className="mb-3">
           I’m familiar with a lot of tech, but nowadays this is where I excel:
         </div>
@@ -26,9 +26,9 @@ const Attributes = () => (
         if you're interested!
       </div>
     </div>
-    <div className="w-full md:w-1/2 lg:w-full xl:w-1/2 px-3">
-      <div className="bg-blue md:bg-grey-darkest p-cozy">
-        <h3 className="mt-0 mb-6">Super powers</h3>
+    <div className="w-full md:w-1/2 lg:w-full xl:w-1/2 px-3 flex">
+      <div className="bg-grey-darkest p-cozy flex-auto">
+        <h2 className="mt-0 mb-6">Super powers</h2>
         <div className="mb-3">
           As well as coding skills, I have the following qualities:
         </div>

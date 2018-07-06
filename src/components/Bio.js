@@ -2,14 +2,13 @@ import React from 'react'
 import jake from '../assets/images/jake-broughton.jpg'
 
 const Bio = () => (
-  <div className="p-cozy self-center text-center max-w-35 text-grey-darker py-10">
-    <div className="inline-block rounded-full overflow-hidden leading-none mb-2 relative">
+  <div className="p-cozy self-center text-center max-w-35 text-grey-darker">
+    <div className="inline-block rounded-full overflow-hidden leading-none mb-4 relative">
       <img src={jake} alt="Jake Broughton" className="w-32 m-0 block" />
       <div className="absolute pin shadow-custom-1 rounded-full" />
     </div>
-    <div className="text-2xl mb-3">jake@mythical.fish</div>
-
-    <div className="-mx-1 mb-12">
+    <div className="text-2xl mb-4">jake@mythical.fish</div>
+    <div className="-mx-1 mb-10">
       <a
         className="btn mx-1 bg-linkedin"
         href="https://www.linkedin.com/in/jakebroughton/"

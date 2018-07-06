@@ -6,6 +6,7 @@ const Project = ({ title, tags, html, links }) => {
     <div className="bg-grey-darkest mb-4 border-0 border-l-8 border-blue border-solid">
       <div className="px-cozy pt-cozy flex justify-between flex-wrap">
         <h4 className="m-0 self-end">{title}</h4>
+        <div className="w-full h-3 md:hidden" />
         <div className="tags">
           {tags &&
             tags.length > 0 &&

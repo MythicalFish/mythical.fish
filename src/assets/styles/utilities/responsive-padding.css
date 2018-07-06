@@ -1,25 +1,26 @@
 .p-cozy {
   @apply px-4;
-  @apply py-8;
+  @apply py-10;
 }
 .pt-cozy {
-  @apply pt-8;
+  @apply pt-10;
 }
 .pb-cozy {
-  @apply pb-8;
+  @apply pb-10;
 }
 .px-cozy {
   @apply px-4;
 }
 @screen sm {
   .p-cozy {
-    @apply p-8;
+    @apply px-8;
+    @apply py-10;
   }
   .pt-cozy {
-    @apply pt-8;
+    @apply pt-10;
   }
   .pb-cozy {
-    @apply pb-8;
+    @apply pb-10;
   }
   .px-cozy {
     @apply px-8;
