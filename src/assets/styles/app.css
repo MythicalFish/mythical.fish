@@ -2,6 +2,7 @@
 @import 'components/tag';
 @import 'components/button';
 @import 'components/list';
+@import 'components/modal';
 @import 'components/theme';
 @import 'fontawesome/fa-brands';
 @import 'fontawesome/fa-solid';

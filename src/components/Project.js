@@ -1,11 +1,15 @@
 import React from 'react'
 import { tagURLs } from '../constants'
 
-const Project = ({ title, tags, html, links }) => {
+const Project = ({ project, previewProject }) => {
+  const { key, title, tags, html, links } = project
   return (
     <div className="bg-grey-darkest mb-4 border-0 border-l-8 border-blue border-solid">
       <div className="px-cozy pt-cozy flex justify-between flex-wrap">
-        <h4 className="m-0 self-end">{title}</h4>
+        <div className="self-end">
+          <h3 className="my-0 mr-3 inline-block">{title}</h3>
+          <i className="fas fa-eye" onClick={() => previewProject(key)} />
+        </div>
         <div className="w-full h-3 md:hidden" />
         <div className="tags">
           {tags &&
