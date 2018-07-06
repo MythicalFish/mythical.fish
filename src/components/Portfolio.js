@@ -12,7 +12,6 @@ class Portfolio extends React.Component {
     })
   )
   previewProject = key => {
-    console.log(this.projects[key])
     this.setState({ previewKey: key })
   }
   render() {
@@ -24,7 +23,7 @@ class Portfolio extends React.Component {
         {projects.map(project => (
           <Project key={project.key} {...{ project, previewProject }} />
         ))}
-        {previewKey && <Previewer project={this.projects[previewKey]} />}
+        {previewKey !== null && <Previewer project={projects[previewKey]} />}
       </div>
     )
   }

@@ -10,7 +10,7 @@
   background: rgba(0, 0, 0, 0.5);
   & > div {
     width: 100%;
-    max-width: 60rem;
+    max-width: 95vw;
     align-self: center;
     justify-self: center;
     overflow-wrap: break-word;

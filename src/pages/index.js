@@ -21,6 +21,11 @@ export const indexQuery = graphql`
               label
               url
             }
+            previews {
+              label
+              description
+              image
+            }
           }
         }
       }

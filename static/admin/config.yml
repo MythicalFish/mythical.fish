@@ -2,8 +2,8 @@ backend:
   name: github
   repo: MythicalFish/mythical.fish
 
-media_folder: static/assets
-public_folder: /assets
+media_folder: static/assets/images
+public_folder: /assets/images
 
 collections:
   - name: project
