@@ -6,6 +6,12 @@ tags:
   - JS
   - Sass
 links:
+  - label: asd
+    url: asd
+previews:
+  - description: This is the description
+    image: /assets/html-color-codes-color-tutorials-hero-00e10b1f.jpg
+    label: This is the label
 position: '8'
 private_code: true
 visible: true
