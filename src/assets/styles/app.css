@@ -4,6 +4,7 @@
 @import 'components/list';
 @import 'components/modal';
 @import 'components/theme';
+@import 'components/previewer';
 @import 'fontawesome/fa-brands';
 @import 'fontawesome/fa-solid';
 @import 'fontawesome/fontawesome';

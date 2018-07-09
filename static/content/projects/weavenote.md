@@ -8,11 +8,11 @@ tags:
 links:
   - label: asd
     url: asd
+position: 8
 previews:
-  - description: This is the description
-    image: /assets/html-color-codes-color-tutorials-hero-00e10b1f.jpg
-    label: This is the label
-position: '8'
+  - description: Test
+    image: /content/images/shpred-1.jpg
+    label: Test
 private_code: true
 visible: true
 ---

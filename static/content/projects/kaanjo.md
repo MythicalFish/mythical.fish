@@ -12,7 +12,11 @@ links:
     url: https://github.com/MythicalFish/kaanjo-plugin
   - label: kaanjo.demo.fish
     url: https://kaanjo.demo.fish
-position: '2'
+position: 2
+previews:
+  - description: Test
+    image: /content/images/shpred-1.jpg
+    label: Test
 private_code: false
 visible: true
 ---

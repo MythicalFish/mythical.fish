@@ -2,8 +2,8 @@ backend:
   name: github
   repo: MythicalFish/mythical.fish
 
-media_folder: static/assets/images
-public_folder: /assets/images
+media_folder: static/content/images
+public_folder: /content/images
 
 collections:
   - name: project
@@ -14,9 +14,9 @@ collections:
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Body, name: body, widget: markdown}
-      - {label: Tags, name: tags, widget: list}
-      - {label: Links, name: links, widget: list, fields: [{label: URL, name: url, widget: string}, {label: Label, name: label, widget: string}]}
-      - {label: Previews, name: previews, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Label, name: label, widget: string}, {label: Description, name: description, widget: text}]}
+      - {label: Tags, name: tags, widget: list, optional: true}
+      - {label: Links, name: links, widget: list, optional: true, fields: [{label: URL, name: url, widget: string}, {label: Label, name: label, widget: string}]}
+      - {label: Previews, name: previews, widget: list, optional: true, fields: [{label: Image, name: image, widget: image}, {label: Label, name: label, widget: string}, {label: Description, name: description, widget: text}]}
       - {label: Position, name: position, widget: number, default: 0}
       - {label: Code is private, name: private_code, widget: boolean, default: false}
       - {label: Visible, name: visible, widget: boolean, default: true}

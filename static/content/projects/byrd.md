@@ -8,7 +8,11 @@ tags:
 links:
   - label: byrd.demo.fish
     url: https://byrd.demo.fish/en
-position: '1'
+position: 1
+previews:
+  - description: Test
+    image: /content/images/shpred-1.jpg
+    label: Test
 private_code: true
 visible: true
 ---

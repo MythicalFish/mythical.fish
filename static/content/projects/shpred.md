@@ -11,7 +11,14 @@ links:
     url: https://github.com/MythicalFish/shpred-front
   - label: shp.red
     url: https://shp.red
-position: '6'
+position: 199
+previews:
+  - description: null
+    image: /content/images/shpred-1.jpg
+    label: Homepage
+  - description: null
+    image: /content/images/shpred-2.jpg
+    label: Video page
 private_code: false
 visible: true
 ---

@@ -9,7 +9,11 @@ tags:
 links:
   - label: phoa.demo.fish
     url: https://phoa.demo.fish
-position: '4'
+position: 4
+previews:
+  - description: Test
+    image: /content/images/shpred-1.jpg
+    label: Test
 private_code: true
 visible: true
 ---

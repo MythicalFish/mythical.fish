@@ -7,12 +7,17 @@
   overflow-y: auto;
   display: grid;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   & > div {
     width: 100%;
-    max-width: 95vw;
+    max-width: 102rem;
     align-self: center;
     justify-self: center;
     overflow-wrap: break-word;
+  }
+}
+@screen sm {
+  .modal {
+    padding: 1rem;
   }
 }

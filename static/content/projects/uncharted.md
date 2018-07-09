@@ -8,7 +8,11 @@ tags:
 links:
   - label: uncharteddigital.nl
     url: https://uncharteddigital.nl
-position: '7'
+position: 7
+previews:
+  - description: Test
+    image: /content/images/shpred-1.jpg
+    label: Test
 private_code: true
 visible: true
 ---

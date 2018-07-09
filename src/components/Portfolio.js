@@ -13,17 +13,27 @@ class Portfolio extends React.Component {
   )
   previewProject = key => {
     this.setState({ previewKey: key })
+    if (key === null) {
+      document.body.className = ''
+    } else {
+      document.body.className = 'overflow-hidden fixed'
+    }
   }
   render() {
     const { projects, previewProject } = this
     const { previewKey } = this.state
     return (
       <div>
-        <h2 className="mt-0 mb-6">Portfolio</h2>
+        <h2 className="mb-6">Portfolio</h2>
         {projects.map(project => (
           <Project key={project.key} {...{ project, previewProject }} />
         ))}
-        {previewKey !== null && <Previewer project={projects[previewKey]} />}
+        {previewKey !== null && (
+          <Previewer
+            project={projects[previewKey]}
+            previewProject={previewProject}
+          />
+        )}
       </div>
     )
   }

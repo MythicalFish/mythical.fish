@@ -1,0 +1,12 @@
+.previewer {
+  @apply flex bg-white text-grey-darker;
+}
+@screen md {
+  .previewer {
+    & > div {
+      &:last-child {
+        width: 440px;
+      }
+    }
+  }
+}
