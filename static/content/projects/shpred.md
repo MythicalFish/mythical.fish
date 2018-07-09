@@ -6,19 +6,25 @@ tags:
   - PostCSS
 links:
   - label: shpred-api
-    url: https://github.com/MythicalFish/shpred-api
+    url: 'https://github.com/MythicalFish/shpred-api'
   - label: shpred-front
-    url: https://github.com/MythicalFish/shpred-front
+    url: 'https://github.com/MythicalFish/shpred-front'
   - label: shp.red
-    url: https://shp.red
-position: 199
+    url: 'https://shp.red'
 previews:
-  - description: null
+  - description: >-
+      The homepage is a grid of video thumbnails, which show a preview when
+      hovered on.
+
+
+      The thumbnails are automatically generated based on the video, but can
+      optionally replaced with a custom image. The preview clips are currently
+      manually created using Premiere.
     image: /content/images/shpred-1.jpg
     label: Homepage
-  - description: null
-    image: /content/images/shpred-2.jpg
+  - image: /content/images/shpred-2.jpg
     label: Video page
+position: 199
 private_code: false
 visible: true
 ---
