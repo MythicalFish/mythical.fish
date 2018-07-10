@@ -1,6 +1,6 @@
 import React from 'react'
 import Github from './icons/brands/Github'
-import LinkedIn from './icons/brands/LinkedIn'
+import LinkedIn from './icons/brands/Linkedin'
 import jake from '../assets/images/jake-broughton.jpg'
 
 const Bio = () => (
