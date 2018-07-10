@@ -1,5 +1,5 @@
 .previewer {
-  @apply flex bg-white text-grey-darker;
+  @apply flex;
 }
 @screen md {
   .previewer {

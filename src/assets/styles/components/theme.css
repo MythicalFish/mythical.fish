@@ -6,4 +6,8 @@
   & h4 {
     @apply text-grey;
   }
+  & .tag,
+  & .icon-tag {
+    @apply tagStyleDark;
+  }
 }

@@ -8,12 +8,19 @@
   display: grid;
   z-index: 999;
   background: rgba(0, 0, 0, 0.8);
-  & > div {
+  & .modal-content {
     width: 100%;
     max-width: 102rem;
     align-self: center;
     justify-self: center;
     overflow-wrap: break-word;
+    position: relative;
+    & .modal-close {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      opacity: 0.4;
+    }
   }
 }
 @screen sm {

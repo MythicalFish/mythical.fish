@@ -6,7 +6,7 @@ const ProjectLinks = ({ project: { links } }) => (
   <Fragment>
     {links &&
       links.length > 0 && (
-        <div className="tags px-cozy pb-cozy">
+        <div className="tags ">
           {links.map((link, index) => <Link key={index} {...link} />)}
         </div>
       )}

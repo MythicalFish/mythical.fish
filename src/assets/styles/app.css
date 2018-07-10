@@ -5,6 +5,7 @@
 @import 'components/modal';
 @import 'components/theme';
 @import 'components/previewer';
+@import 'components/image-nav';
 @import 'utilities/tailwind'; /* Keep utils last */
 @import 'utilities/responsive-padding';
 @import 'utilities/sizing';

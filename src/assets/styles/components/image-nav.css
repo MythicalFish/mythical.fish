@@ -1,0 +1,44 @@
+.image-nav {
+  position: relative;
+  & > button {
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8vw;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    @apply flex items-center px-3;
+    cursor: pointer;
+    outline: none;
+    &.nav-left {
+      left: 0;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+    &.nav-right {
+      @apply justify-end;
+      right: 0;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+    }
+    & svg {
+      height: 2rem;
+      width: 2rem;
+      color: #fff;
+    }
+  }
+  &:not(:hover) {
+    & > button {
+      opacity: 0;
+    }
+  }
+}

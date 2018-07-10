@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ProjectLinks from './ProjectLinks'
 import ProjectTags from './ProjectTags'
+import ChevronLeft from './icons/light/ChevronLeft'
+import ChevronRight from './icons/light/ChevronRight'
 
 class Previewer extends React.Component {
   state = { currentKey: 0 }
@@ -9,7 +11,7 @@ class Previewer extends React.Component {
     if (!this.isNavigable()) return
     const {
       project: { previews },
-      previewProject
+      showProject
     } = this.props
     const total = previews.length
     const { currentKey } = this.state
@@ -23,14 +25,11 @@ class Previewer extends React.Component {
       let nextKey = currentKey + 1
       if (nextKey + 1 > total) nextKey = 0
       this.setState({ currentKey: nextKey })
-    } else if (keyCode === 27) {
-      // ESC
-      previewProject(null)
     }
   }
   goLeft = () => this.handleKeyPress({ keyCode: 37 })
   goRight = () => this.handleKeyPress({ keyCode: 39 })
-  escape = () => this.handleKeyPress({ keyCode: 27 })
+
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyPress, false)
   }
@@ -38,22 +37,53 @@ class Previewer extends React.Component {
     document.removeEventListener('keydown', this.handleKeyPress, false)
   }
   render() {
-    const { project } = this.props
+    const { project, showProject, nextProject } = this.props
     const { currentKey } = this.state
-    const current = project.previews[currentKey]
+    const current = project.previews[currentKey] || {}
+    const currentCount = currentKey + 1
+    const total = project.previews.length
     return (
-      <div className="modal">
-        <div className="previewer">
-          <div className="">
-            <img src={current.image} className="block m-0" />
-          </div>
-          <div className="p-3">
-            <div className="mb-4">
-              <h3 className="">{project.title}</h3>
+      <div className="previewer bg-white text-grey-darker">
+        <div className="image-nav">
+          {total.length > 1 && (
+            <Fragment>
+              <button className="nav-left" onClick={this.goLeft}>
+                <ChevronLeft />
+              </button>
+              <button className="nav-right" onClick={this.goRight}>
+                <ChevronRight />
+              </button>
+            </Fragment>
+          )}
+          <img src={current.image} className="block m-0" />
+        </div>
+        <div className="flex flex-col justify-between">
+          <div className="px-4 py-5">
+            <div className="mb-5">
+              <h3 className="mb-2 text-grey-dark">{project.title}</h3>
               <ProjectTags {...{ project }} />
             </div>
-            <div>{current.label}</div>
-            <div className="pt-4">{current.description}</div>
+            <div>
+              <div className="mb-3">
+                <h4 className="text-grey-dark m-0 inline-block mr-2">
+                  {current.label}
+                </h4>
+                {total > 1 && (
+                  <span className="text-xs text-grey">{`Image ${currentCount} of ${total}`}</span>
+                )}
+              </div>
+              <div
+                className="text-sm mb-3"
+                dangerouslySetInnerHTML={{ __html: current.description }}
+              />
+              <ProjectLinks {...{ project }} />
+            </div>
+          </div>
+          <div className="px-4 py-5">
+            <button
+              className="btn btn-white"
+              onClick={() => showProject(nextProject.key)}
+            >{`Next project: ${nextProject.title}`}</button>
           </div>
         </div>
       </div>
