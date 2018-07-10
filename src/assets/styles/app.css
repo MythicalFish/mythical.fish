@@ -5,9 +5,6 @@
 @import 'components/modal';
 @import 'components/theme';
 @import 'components/previewer';
-@import 'fontawesome/fa-brands';
-@import 'fontawesome/fa-solid';
-@import 'fontawesome/fontawesome';
 @import 'utilities/tailwind'; /* Keep utils last */
 @import 'utilities/responsive-padding';
 @import 'utilities/sizing';

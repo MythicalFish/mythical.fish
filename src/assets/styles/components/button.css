@@ -1,3 +1,7 @@
 .btn {
   @apply py-3 px-4 rounded-sm bg-blue inline-block text-white leading-none;
+  & svg {
+    margin-bottom: -0.2em;
+    transform: translateY(-0.08em);
+  }
 }

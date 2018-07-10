@@ -1,4 +1,6 @@
 import React from 'react'
+import Github from './icons/brands/Github'
+import LinkedIn from './icons/brands/LinkedIn'
 import jake from '../assets/images/jake-broughton.jpg'
 
 const Bio = () => (
@@ -14,7 +16,7 @@ const Bio = () => (
         href="https://www.linkedin.com/in/jakebroughton/"
         target="_blank"
       >
-        <i className="fab fa-linkedin mr-2" />
+        <LinkedIn className="mr-2" />
         LinkedIn
       </a>
       <a
@@ -22,7 +24,7 @@ const Bio = () => (
         href="https://github.com/MythicalFish/"
         target="_blank"
       >
-        <i className="fab fa-github mr-2" />
+        <Github className="mr-2" />
         GitHub
       </a>
     </div>

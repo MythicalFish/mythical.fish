@@ -13,8 +13,8 @@ links:
     url: 'https://shp.red'
 previews:
   - description: >-
-      The homepage is a grid of video thumbnails, which show a preview when
-      hovered on.
+      <p>The homepage is a grid of video thumbnails, which show a preview when
+      hovered on.</p>
 
 
       The thumbnails are automatically generated based on the video, but can
