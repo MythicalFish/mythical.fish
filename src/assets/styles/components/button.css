@@ -1,3 +1,6 @@
+button {
+  outline: none;
+}
 .btn {
   @apply py-3 px-4 rounded-sm bg-blue inline-block text-white leading-none;
   border: none;

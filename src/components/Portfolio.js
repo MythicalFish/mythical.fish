@@ -20,10 +20,15 @@ class Portfolio extends React.Component {
       document.body.className = 'overflow-hidden fixed'
     }
   }
-  nextProjectKey = () => {
-    let nextKey = this.state.previewKey + 1
+  nextProjectKey = key => {
+    let nextKey = (key || this.state.previewKey) + 1
     if (nextKey + 1 > this.projects.length) nextKey = 0
-    return nextKey
+    const { previews } = this.projects[nextKey]
+    if (previews && previews.length > 0) {
+      return nextKey
+    } else {
+      return this.nextProjectKey(nextKey)
+    }
   }
   render() {
     const { projects, showProject } = this

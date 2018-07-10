@@ -13,9 +13,6 @@ links:
     url: https://github.com/coinfi/coinfi
 position: 9
 previews:
-  - description: Test
-    image: /content/images/shpred-1.jpg
-    label: Test
 private_code: false
 visible: true
 ---

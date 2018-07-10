@@ -24,7 +24,7 @@ previews:
     label: Homepage
   - image: /content/images/shpred-2.jpg
     label: Video page
-position: 199
+position: 7
 private_code: false
 visible: true
 ---

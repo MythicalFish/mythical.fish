@@ -1,11 +1,17 @@
 .previewer {
   @apply flex;
 }
-@screen md {
+@media (max-width: config('screens.lg')) {
+  .previewer {
+    flex-wrap: wrap;
+  }
+}
+@screen lg {
   .previewer {
     & > div {
       &:last-child {
         width: 440px;
+        flex: none;
       }
     }
   }
