@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import clickOutside from 'react-onclickoutside'
-import CloseButton from './icons/light/Times'
+import CloseIcon from './icons/light/Times'
 
 class Modal extends React.Component {
   handleKeyPress = ({ keyCode }) => {
@@ -35,11 +35,10 @@ const ModalContent = clickOutside(
     render() {
       return (
         <div className="modal-content">
-          <CloseButton
-            className="modal-close cursor-pointer"
-            onClick={this.handleClickOutside}
-          />
           {this.props.children}
+          <button className="modal-close" onClick={this.handleClickOutside}>
+            <CloseIcon />
+          </button>
         </div>
       )
     }

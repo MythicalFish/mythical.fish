@@ -45,7 +45,7 @@ class Previewer extends React.Component {
     return (
       <div className="previewer bg-white text-grey-darker">
         <div className="image-nav">
-          {total.length > 1 && (
+          {total > 1 && (
             <Fragment>
               <button className="nav-left" onClick={this.goLeft}>
                 <ChevronLeft />
@@ -79,12 +79,14 @@ class Previewer extends React.Component {
               <ProjectLinks {...{ project }} />
             </div>
           </div>
-          <div className="px-4 py-5">
-            <button
-              className="btn btn-white"
-              onClick={() => showProject(nextProject.key)}
-            >{`Next project: ${nextProject.title}`}</button>
-          </div>
+          {nextProject && (
+            <div className="px-4 py-5">
+              <button
+                className="btn btn-white"
+                onClick={() => showProject(nextProject.key)}
+              >{`Next project: ${nextProject.title}`}</button>
+            </div>
+          )}
         </div>
       </div>
     )

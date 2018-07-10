@@ -12,22 +12,17 @@ class Portfolio extends React.Component {
       ...rest
     })
   )
-  showProject = key => {
-    this.setState({ previewKey: key })
-    if (key === null) {
-      document.body.className = ''
-    } else {
-      document.body.className = 'overflow-hidden fixed'
-    }
-  }
-  nextProjectKey = key => {
-    let nextKey = (key || this.state.previewKey) + 1
-    if (nextKey + 1 > this.projects.length) nextKey = 0
-    const { previews } = this.projects[nextKey]
+  showProject = key => this.setState({ previewKey: key })
+  nextProject = () => {
+    const { projects, state } = this
+    let nextKey = state.previewKey + 1
+    if (nextKey + 1 > projects.length) nextKey = 0
+    const project = projects[nextKey]
+    const { previews } = project
     if (previews && previews.length > 0) {
-      return nextKey
+      return project
     } else {
-      return this.nextProjectKey(nextKey)
+      return null
     }
   }
   render() {
@@ -46,9 +41,7 @@ class Portfolio extends React.Component {
           <Previewer
             project={projects[previewKey]}
             showProject={showProject}
-            nextProject={{
-              ...projects[this.nextProjectKey()]
-            }}
+            nextProject={this.nextProject()}
           />
         </Modal>
       </div>

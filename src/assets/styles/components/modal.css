@@ -15,16 +15,37 @@
     justify-self: center;
     overflow-wrap: break-word;
     position: relative;
-    & .modal-close {
-      position: absolute;
-      top: 0.5rem;
-      right: 0.5rem;
-      opacity: 0.4;
-    }
   }
 }
 @screen sm {
   .modal {
     padding: 1rem;
+  }
+}
+@media (max-width: config('screens.lg')) {
+  .modal-close {
+    width: 100%;
+    display: block;
+    padding: 2rem;
+    background: transparent;
+    border: none;
+    text-align: center;
+    line-height: 1;
+    & svg {
+      fill: #fff;
+    }
+  }
+}
+@screen lg {
+  .modal-close {
+    background: transparent;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    opacity: 0.4;
   }
 }

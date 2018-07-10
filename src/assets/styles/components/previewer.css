@@ -9,6 +9,11 @@
 @screen lg {
   .previewer {
     & > div {
+      &:first-child {
+        background: #000;
+        flex: auto;
+        min-height: 20rem;
+      }
       &:last-child {
         width: 440px;
         flex: none;

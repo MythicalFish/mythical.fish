@@ -10,9 +10,9 @@ const Bio = () => (
       <div className="absolute pin shadow-custom-1 rounded-full" />
     </div>
     <div className="text-2xl mb-4">jake@mythical.fish</div>
-    <div className="-mx-1 mb-10">
+    <div className="-m-1">
       <a
-        className="btn mx-1 bg-linkedin"
+        className="btn m-1 bg-linkedin"
         href="https://www.linkedin.com/in/jakebroughton/"
         target="_blank"
       >
@@ -20,7 +20,7 @@ const Bio = () => (
         LinkedIn
       </a>
       <a
-        className="btn mx-1 bg-github"
+        className="btn m-1 bg-github"
         href="https://github.com/MythicalFish/"
         target="_blank"
       >
@@ -28,7 +28,7 @@ const Bio = () => (
         GitHub
       </a>
     </div>
-    <div>
+    <div className="mt-10">
       <p>
         My name is Jake Broughton; I'm a solution-finder and full-stack software
         engineer, specializing in JavaScript and Ruby.
