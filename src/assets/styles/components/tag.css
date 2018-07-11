@@ -23,8 +23,8 @@
     & span {
       @apply p-1;
       &:first-child {
-        & i {
-          transform: scale(0.8);
+        & svg {
+          display: block;
         }
       }
       &:not(:first-child) {

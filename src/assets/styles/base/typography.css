@@ -8,6 +8,7 @@ h6 {
     margin-top: 0;
   }
 }
-p:last-child&:not(:first-child) {
+p:last-child:not(:first-child),
+p:only-child {
   margin: 0;
 }
