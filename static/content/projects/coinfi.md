@@ -13,6 +13,20 @@ links:
     url: https://github.com/coinfi/coinfi
 position: 9
 previews:
+  - image: /content/images/coinfi-1.jpg
+    label: Homepage
+  - image: /content/images/coinfi-2.jpg
+    label: ICO Database
+  - image: /content/images/coinfi-2b.jpg
+    label: ICO Database
+  - image: /content/images/coinfi-mobile-1.jpg
+    label: ICO filters (mobile)
+  - image: /content/images/coinfi-3.jpg
+    label: Watchlist
+  - image: /content/images/coinfi-4.jpg
+    label: Newsfeed
+  - image: /content/images/coinfi-mobile-2.jpg
+    label: Newsfeed (mobile)
 private_code: false
 visible: true
 ---

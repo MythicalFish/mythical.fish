@@ -6,10 +6,18 @@ tags:
   - JS
   - Sass
 links:
-  - label: asd
-    url: asd
 position: 8
 previews:
+  - label: Project overview
+    image: /content/images/weavenote-1.jpg
+  - label: Project details
+    image: /content/images/weavenote-2.jpg
+  - label: Project measurements
+    image: /content/images/weavenote-3.jpg
+  - label: Export project
+    image: /content/images/weavenote-4.jpg
+  - label: Collaborators
+    image: /content/images/weavenote-6.jpg
 private_code: true
 visible: true
 ---

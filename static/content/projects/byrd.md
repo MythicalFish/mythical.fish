@@ -11,7 +11,7 @@ links:
 position: 1
 previews:
 private_code: true
-visible: true
+visible: false
 ---
 I normally wouldn't include a Wordpress project on my portfolio, because it's not the kind of work I do anymore. However I'm including this project from 2017 because I'm actually pretty proud of myself for successfully completing it... It was very, very difficult project, and not because of the work itself.
 

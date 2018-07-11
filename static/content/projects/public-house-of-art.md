@@ -11,6 +11,14 @@ links:
     url: https://phoa.demo.fish
 position: 4
 previews:
+  - label: Artwork overview
+    image: /content/images/phoa-2.jpg
+  - label: Article overview
+    image: /content/images/phoa-3.jpg
+  - label: Shopping cart
+    image: /content/images/phoa-4.jpg
+  - label: Admin interface
+    image: /content/images/phoa-admin-1.jpg
 private_code: true
 visible: true
 ---

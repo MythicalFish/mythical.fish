@@ -10,6 +10,14 @@ links:
     url: https://uncharteddigital.nl
 position: 7
 previews:
+  - label: Desktop frontend
+    image: /content/images/uncharted-1.jpg
+  - label: Mobile frontend
+    image: /content/images/uncharted-mobile-1.jpg
+  - label: Partials system
+    image: /content/images/uncharted-admin-1.jpg
+  - label: Image admin
+    image: /content/images/uncharted-admin-2.jpg
 private_code: true
 visible: true
 ---

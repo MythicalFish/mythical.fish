@@ -14,6 +14,14 @@ links:
     url: https://kaanjo.demo.fish
 position: 2
 previews:
+  - label: Homepage
+    image: /content/images/kaanjo-1.jpg
+  - label: Create campaign
+    image: /content/images/kaanjo-2.jpg
+  - label: Implementation
+    image: /content/images/kaanjo-3.jpg
+  - label: Stats
+    image: /content/images/kaanjo-4.jpg
 private_code: false
 visible: true
 ---
