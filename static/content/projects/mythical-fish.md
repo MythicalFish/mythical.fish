@@ -10,7 +10,7 @@ links:
     url: https://github.com/MythicalFish/mythical.fish
 position: 5
 previews:
-private_code: false
+privateCode: false
 visible: true
 ---
 For building this portfolio I decided to use Gatsby and Netlify CMS, which grants multiple benefits.

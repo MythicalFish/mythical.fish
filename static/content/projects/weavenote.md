@@ -18,7 +18,7 @@ previews:
     image: /content/images/weavenote-4.jpg
   - label: Collaborators
     image: /content/images/weavenote-6.jpg
-private_code: true
+privateCode: true
 visible: true
 ---
 Weavenote allows fashion designers to login to their organization, collaboratively create projects, upload images, annotate those images, add measurements, materials, comments, instructions, and ultimately produce "tech sheets" which are PDFs to be given to clothing manufacturers. 

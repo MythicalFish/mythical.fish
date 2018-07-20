@@ -1,5 +1,9 @@
 button {
   outline: none;
+  cursor: pointer;
+  & * {
+    cursor: pointer;
+  }
 }
 .btn {
   @apply py-3 px-4 rounded-sm bg-blue inline-block text-white leading-none;
@@ -12,4 +16,14 @@ button {
     @apply bg-white text-grey-dark;
     border: 1px solid config('colors.grey-dark');
   }
+}
+.btn-wrapper {
+  background: transparent;
+  padding: 0;
+  display: block;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }

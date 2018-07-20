@@ -1,5 +1,5 @@
 .tagStyleDefault {
-  @apply inline-block rounded-sm text-grey-dark leading-none text-sm;
+  @apply inline-block rounded-sm text-grey-dark leading-none text-sm p-0;
   font-family: monospace;
   border: 1px solid config('colors.grey');
   background: rgba(0, 0, 0, 0.02);
@@ -28,9 +28,15 @@
         }
       }
       &:not(:first-child) {
-        @apply flex-auto pr-2;
+        @apply flex-auto pr-2 text-grey;
         border-left: 1px solid rgba(255, 255, 255, 0.1);
       }
     }
   }
+}
+.icon-tag-subtle {
+  & span {
+    @apply text-grey;
+  }
+  opacity: 0.5;
 }

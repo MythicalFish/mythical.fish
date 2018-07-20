@@ -12,7 +12,7 @@ previews:
     image: /content/images/coinfi-1.jpg
     label: temp
 position: 4
-private_code: false
+privateCode: false
 visible: false
 ---
 The idea here is that an entire article or book should be condensed into an extremely concise series of phrases, which can be reordered as desired, and expanded.

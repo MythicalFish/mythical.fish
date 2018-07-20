@@ -22,7 +22,7 @@ previews:
     image: /content/images/kaanjo-3.jpg
   - label: Stats
     image: /content/images/kaanjo-4.jpg
-private_code: false
+privateCode: false
 visible: true
 ---
 I built Kaanjo for a client in 2016, it consists of 2 parts: the JS plugin, and the Dashboard. 

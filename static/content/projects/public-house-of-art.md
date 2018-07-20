@@ -19,7 +19,7 @@ previews:
     image: /content/images/phoa-4.jpg
   - label: Admin interface
     image: /content/images/phoa-admin-1.jpg
-private_code: true
+privateCode: true
 visible: true
 ---
 The Public House of Art was the first big project I took on as a freelancer; I worked with them from the very beginning, and I built their entire online platform, as well as provided input on its design. 

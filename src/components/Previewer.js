@@ -9,10 +9,7 @@ class Previewer extends React.Component {
   isNavigable = () => this.props.project.previews.length > 1
   handleKeyPress = ({ keyCode }) => {
     if (!this.isNavigable()) return
-    const {
-      project: { previews },
-      showProject
-    } = this.props
+    const { project: { previews }, showProject } = this.props
     const total = previews.length
     const { currentKey } = this.state
     if (keyCode === 37) {
@@ -45,7 +42,7 @@ class Previewer extends React.Component {
     return (
       <div className='previewer bg-white text-grey-darker'>
         <div className='image-nav'>
-          {total > 1 && (
+          {total > 1 &&
             <Fragment>
               <button className='nav-left' onClick={this.goLeft}>
                 <ChevronLeft />
@@ -53,8 +50,7 @@ class Previewer extends React.Component {
               <button className='nav-right' onClick={this.goRight}>
                 <ChevronRight />
               </button>
-            </Fragment>
-          )}
+            </Fragment>}
           <img src={current.image} className='block m-0' />
         </div>
         <div className='flex flex-col justify-between'>
@@ -68,25 +64,23 @@ class Previewer extends React.Component {
                 <h4 className='text-grey-dark m-0 inline-block mr-2'>
                   {current.label}
                 </h4>
-                {total > 1 && (
-                  <span className='text-xs text-grey'>{`Image ${currentCount} of ${total}`}</span>
-                )}
+                {total > 1 &&
+                  <span className='text-xs text-grey'>{`Image ${currentCount} of ${total}`}</span>}
               </div>
               <div
                 className='text-sm mb-3'
                 dangerouslySetInnerHTML={{ __html: current.description }}
               />
-              <ProjectLinks {...{ project }} />
+              <ProjectLinks {...{ project }} hidePreviewLink />
             </div>
           </div>
-          {nextProject && (
+          {nextProject &&
             <div className='px-4 py-5'>
               <button
                 className='btn btn-white'
                 onClick={() => showProject(nextProject.key)}
               >{`Next project: ${nextProject.title}`}</button>
-            </div>
-          )}
+            </div>}
         </div>
       </div>
     )

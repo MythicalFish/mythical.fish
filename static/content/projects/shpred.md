@@ -25,7 +25,7 @@ previews:
   - image: /content/images/shpred-2.jpg
     label: Video page
 position: 7
-private_code: false
+privateCode: false
 visible: true
 ---
 A Youtube-like site I built for fun.

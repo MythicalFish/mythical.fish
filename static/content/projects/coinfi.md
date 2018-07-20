@@ -27,7 +27,7 @@ previews:
     label: Newsfeed
   - image: /content/images/coinfi-mobile-2.jpg
     label: Newsfeed (mobile)
-private_code: false
+privateCode: false
 visible: true
 ---
 I worked on the CoinFi platform for several months, cleaning up and refactoring their Rails codebase, as well as implementing the functional CSS framework Tachyons, and React via Webpacker. 

@@ -17,6 +17,7 @@ export const indexQuery = graphql`
           frontmatter {
             title
             tags
+            privateCode
             links {
               label
               url

@@ -18,7 +18,7 @@ previews:
     image: /content/images/uncharted-admin-1.jpg
   - label: Image admin
     image: /content/images/uncharted-admin-2.jpg
-private_code: true
+privateCode: true
 visible: true
 ---
 For this project, a beautiful website was designed for me to implement in any way I saw fit.
