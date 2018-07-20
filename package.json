@@ -20,6 +20,7 @@
     "postcss-import": "^11.1.0",
     "postcss-mixins": "^6.2.0",
     "prettier": "^1.11.1",
+    "prettier-standard": "^8.0.1",
     "purgecss": "^1.0.1",
     "react-helmet": "^5.2.0",
     "react-onclickoutside": "^6.7.1",
@@ -34,5 +35,6 @@
     "serve": "gatsby serve",
     "postcss:run": "postcss src/assets/styles/app.css -o src/assets/styles/compiled.css",
     "postcss:watch": "npm run postcss:run -- -w"
-  }
+  },
+  "devDependencies": {}
 }

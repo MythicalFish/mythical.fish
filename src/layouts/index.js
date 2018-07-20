@@ -41,7 +41,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     {children()}
-    <div id="modal" />
+    <div id='modal' />
   </div>
 )
 
