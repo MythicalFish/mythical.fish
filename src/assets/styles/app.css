@@ -6,6 +6,7 @@
 @import 'components/theme';
 @import 'components/previewer';
 @import 'components/image-nav';
+@import 'components/document';
 @import 'utilities/tailwind'; /* Keep utils last */
 @import 'utilities/responsive-padding';
 @import 'utilities/sizing';

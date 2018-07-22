@@ -12,3 +12,6 @@ p:last-child:not(:first-child),
 p:only-child {
   margin: 0;
 }
+body {
+  @apply text-grey-darker;
+}

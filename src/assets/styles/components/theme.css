@@ -10,4 +10,7 @@
   & .icon-tag {
     @apply tagStyleDark;
   }
+  & .content-box {
+    @apply bg-grey-darkest border-0 border-l-8 border-blue border-solid;
+  }
 }
