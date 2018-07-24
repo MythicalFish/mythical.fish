@@ -1,45 +1,53 @@
-.document {
-  padding: 0 15mm;
-  width: 210mm;
+html.document {
   font: 100%/1.4 'Quattrocento Sans', serif;
+  background: #ccc;
   @apply text-grey-darker;
-  & h1,
-  & h2,
-  & h3,
-  & h4 {
-    @apply text-grey-darker;
-  }
-  & .project-link {
-    background-image: none;
-    @apply text-blue inline-block p-2;
-    font-size: 0.9em;
-    & svg {
-      position: relative;
-      top: 2px;
-      @apply text-grey;
+  & .document-container {
+    margin: 0 auto;
+    background: #fff;
+    width: 210mm; /* Should be 210mm */
+    & h1,
+    & h2,
+    & h3,
+    & h4 {
+      @apply text-grey-darker;
     }
-  }
-  & .page {
-    height: 267mm; /* Normaly 297, but 15mm on top and bottom is added by converter */
-  }
-  & .contact-details {
-    @apply text-right -mt-2;
-    & > div {
-      @apply pt-2;
-      & a {
-        color: inherit;
-        text-decoration: none;
-        background: none;
-      }
+    & .project-link {
+      background-image: none;
+      @apply text-blue inline-block p-2;
+      font-size: 0.9em;
       & svg {
-        @apply ml-2 relative;
-        top: 3px;
-        fill: config('colors.blue');
+        position: relative;
+        top: 2px;
+        @apply text-grey;
       }
     }
-  }
-  & .doc-title {
-    border-left: 1rem solid config('colors.blue');
-    @apply pl-4 leading-none;
+    & .page {
+      height: 287mm; /* Normaly 297, but 15mm on top and bottom is added by converter */
+    }
+    & .contact-footer {
+      @apply pt-12 pb-10;
+      border-top: 8px solid config('colors.blue');
+    }
+    & .contact-details {
+      @apply -mt-2;
+      & > div {
+        @apply pt-2;
+        & a {
+          color: inherit;
+          text-decoration: none;
+          background: none;
+        }
+        & svg {
+          @apply mr-2 relative;
+          top: 3px;
+          fill: config('colors.blue');
+        }
+      }
+    }
+    & .doc-title {
+      border-left: 1rem solid config('colors.blue');
+      @apply pl-4 leading-none;
+    }
   }
 }
