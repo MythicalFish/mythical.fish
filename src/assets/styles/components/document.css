@@ -1,11 +1,13 @@
 html.document {
-  font: 100%/1.4 'Quattrocento Sans', serif;
+  font-size: 100%;
   background: #ccc;
   @apply text-grey-darker;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 400;
   & .document-container {
     margin: 0 auto;
     background: #fff;
-    width: 210mm; /* Should be 210mm */
+    width: 210mm; /* Normally 210mm */
     & h1,
     & h2,
     & h3,

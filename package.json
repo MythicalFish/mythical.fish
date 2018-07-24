@@ -24,9 +24,7 @@
     "purgecss": "^1.0.1",
     "react-helmet": "^5.2.0",
     "react-onclickoutside": "^6.7.1",
-    "tailwindcss": "^0.6.1",
-    "typography": "^0.16.17",
-    "typography-theme-fairy-gates": "^0.15.11"
+    "tailwindcss": "^0.6.1"
   },
   "scripts": {
     "start": "run-p postcss:watch develop",

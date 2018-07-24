@@ -33,12 +33,6 @@ module.exports = {
           windows: false
         }
       }
-    },
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: './typography.config'
-      }
     }
   ]
 }

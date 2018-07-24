@@ -4,6 +4,7 @@ import About from './About'
 import Skills from '../Skills'
 import SuperPowers from '../SuperPowers'
 import Portfolio from './Portfolio'
+import Font from './Font'
 
 class Layout extends React.Component {
   componentDidMount () {
@@ -12,6 +13,7 @@ class Layout extends React.Component {
   render () {
     return (
       <div className='document-container'>
+        <Font />
         <div className='page flex flex-col'>
           <div className='flex flex-auto'>
             <div className='w-1/2 flex items-center'>

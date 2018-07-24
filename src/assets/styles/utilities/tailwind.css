@@ -7,8 +7,8 @@
  *
  * If using `postcss-import`, use this import instead:
  *
- * @import "tailwindcss/preflight";
  */
+@tailwind preflight;
 
 /**
   * This injects any component classes registered by plugins.
