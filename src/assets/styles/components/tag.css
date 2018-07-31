@@ -1,23 +1,16 @@
-.tagStyleDefault {
-  @apply inline-block rounded-sm text-grey-dark leading-none text-sm p-0;
-  font-family: monospace;
-  border: 1px solid config('colors.grey');
-  background: rgba(0, 0, 0, 0.02);
-  margin: 0.2rem 0.15rem;
-}
-.tagStyleDark {
-  @apply text-blue;
-  border-color: config('colors.grey-darker');
-  background: rgba(0, 0, 0, 0.2);
-}
 .tags {
   margin: -0.2rem -0.15rem;
 }
 .tag {
-  @apply tagStyleDefault px-2 py-1;
+  @apply inline-block rounded-sm text-grey-dark leading-none text-xs px-2 py-1;
+  font-weight: 500;
+  border: 1px solid config('colors.grey');
+  background: rgba(0, 0, 0, 0.02);
+  margin: 0.2rem 0.15rem;
+  text-decoration: none;
 }
 .icon-tag {
-  @apply tagStyleDefault;
+  @apply tag p-0;
   & > span {
     @apply flex;
     & span {

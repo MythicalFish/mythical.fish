@@ -1,6 +1,18 @@
+:root {
+  --linkedin: #1485bd;
+  --github: #25292e;
+  --mirage: #171e27;
+  --mirage-light: #202835;
+}
 .bg-linkedin {
-  background: #1485bd;
+  background: var(--linkedin);
 }
 .bg-github {
-  background: #25292e;
+  background: var(--github);
+}
+.bg-mirage {
+  background: var(--mirage);
+}
+.bg-mirage-light {
+  background: var(--mirage-light);
 }

@@ -6,7 +6,7 @@ import PreviewIcon from './icons/regular/Images'
 const Project = props => {
   const { project } = props
   return (
-    <div className='bg-grey-darkest mb-4 border-0 border-l-8 border-blue border-solid'>
+    <div className='bg-mirage mb-4 sm:border-l-8 border-blue border-solid rounded'>
       <div className='px-cozy pt-cozy flex justify-between flex-wrap'>
         <div className='self-end'>
           <TitleWrapper {...props}>

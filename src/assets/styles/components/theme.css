@@ -1,14 +1,17 @@
 .dark-theme {
-  @apply text-grey bg-black;
+  @apply bg-mirage-light;
+  color: rgba(255, 255, 255, 0.6);
   & h1,
   & h2,
   & h3,
   & h4 {
-    @apply text-grey;
+    color: wheat;
   }
   & .tag,
   & .icon-tag {
-    @apply tagStyleDark;
+    @apply text-blue;
+    border-color: config('colors.grey-darker');
+    background: rgba(0, 0, 0, 0.2);
   }
   & .content-box {
     @apply bg-grey-darkest border-0 border-l-8 border-blue border-solid;

@@ -1,3 +1,6 @@
+a:any-link {
+  color: config('colors.blue');
+}
 button {
   outline: none;
   cursor: pointer;
@@ -6,9 +9,10 @@ button {
   }
 }
 .btn {
-  @apply py-3 px-4 rounded-sm bg-blue inline-block text-white leading-none;
+  @apply py-3 px-4 rounded-sm bg-blue inline-block leading-none;
   border: none;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.9) !important;
   & svg {
     margin-bottom: -0.2em;
     transform: translateY(-0.08em);
