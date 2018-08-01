@@ -1,4 +1,5 @@
 ---
+type: project
 title: Kaanjo
 tags:
   - Rails

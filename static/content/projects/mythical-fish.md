@@ -1,4 +1,5 @@
 ---
+type: project
 title: Mythical Fish (this website)
 tags:
   - React

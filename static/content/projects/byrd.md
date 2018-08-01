@@ -1,4 +1,5 @@
 ---
+type: project
 title: Byrd
 tags:
   - JS

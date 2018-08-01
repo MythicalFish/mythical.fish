@@ -1,15 +1,48 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import PDFLayout from '../components/pdf/Layout'
 
-const IndexPage = props => <Layout {...props} />
+const parseData = data => {
+  const projects = data.projects.edges.map(
+    ({ node: { frontmatter, ...rest } }, key) => ({
+      ...frontmatter,
+      ...rest,
+      key
+    })
+  )
+  const info = {}
+  data.info.edges.forEach(({ node: { frontmatter, html } }) => {
+    info[frontmatter.key] = { html, ...frontmatter }
+  })
+  return { projects, info }
+}
+
+const IndexPage = ({ data, location }) => {
+  const props = { content: parseData(data) }
+  if (location.pathname === '/pdf') return <PDFLayout {...props} />
+  return <Layout {...props} />
+}
 
 export default IndexPage
 
 export const indexQuery = graphql`
   query indexQuery {
-    allMarkdownRemark(
+    info: allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "info" } } }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            key
+            itemList
+          }
+        }
+      }
+    }
+    projects: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___position] }
-      filter: { frontmatter: { visible: { eq: true } } }
+      filter: { frontmatter: { visible: { eq: true } type: { eq: "project" } } }
     ) {
       edges {
         node {

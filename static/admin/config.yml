@@ -10,8 +10,8 @@ collections:
     label: Project
     folder: static/content/projects
     create: true
-    slug: "{{slug}}"
     fields:
+      - {label: Type, name: type, widget: hidden, default: projects}
       - {label: Title, name: title, widget: string}
       - {label: Body, name: body, widget: markdown}
       - {label: Tags, name: tags, widget: list, optional: true}
@@ -20,3 +20,12 @@ collections:
       - {label: Position, name: position, widget: number, default: 0}
       - {label: Code is private, name: privateCode, widget: boolean, default: false}
       - {label: Visible, name: visible, widget: boolean, default: true}
+  - name: info
+    label: Info
+    folder: static/content/info
+    create: true
+    fields:
+      - {label: Type, name: type, widget: hidden, default: info}
+      - {label: Key, name: key, widget: string}
+      - {label: Body, name: body, widget: markdown, optional: true}
+      - {label: Item List, name: itemList, widget: list, optional: true}

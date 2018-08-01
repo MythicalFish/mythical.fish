@@ -1,4 +1,5 @@
 ---
+type: project
 title: Typer Fish
 tags:
   - Rails

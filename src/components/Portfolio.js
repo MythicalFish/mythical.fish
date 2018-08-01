@@ -5,16 +5,9 @@ import Project from './Project'
 
 class Portfolio extends React.Component {
   state = { previewKey: null }
-  projects = this.props.data.allMarkdownRemark.edges.map(
-    ({ node: { frontmatter, ...rest } }, key) => ({
-      key,
-      ...frontmatter,
-      ...rest
-    })
-  )
   showProject = key => this.setState({ previewKey: key })
   nextProject = () => {
-    const { projects, state } = this
+    const { props: { projects }, state } = this
     let nextKey = state.previewKey + 1
     if (nextKey + 1 > projects.length) nextKey = 0
     const project = projects[nextKey]
@@ -26,7 +19,7 @@ class Portfolio extends React.Component {
     }
   }
   render () {
-    const { projects, showProject } = this
+    const { props: { projects }, showProject } = this
     const { previewKey } = this.state
     return (
       <div className='pt-6 lg:pt-0'>

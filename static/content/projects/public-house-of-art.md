@@ -1,4 +1,5 @@
 ---
+type: project
 title: Public House of Art
 tags:
   - Rails
