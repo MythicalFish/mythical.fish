@@ -1,7 +1,7 @@
 html.document {
   font-size: 100%;
-  background: #ccc;
-  @apply text-grey-darker;
+  background: #222;
+  @apply text-grey;
   font-family: 'Avenir Next', sans-serif;
   font-weight: 400;
   & .document-container {
@@ -13,6 +13,7 @@ html.document {
     & h3,
     & h4 {
       @apply text-grey-darker;
+      font-weight: 400;
     }
     & .project-link {
       background-image: none;
@@ -26,6 +27,7 @@ html.document {
     }
     & .page {
       height: 287mm; /* Normaly 297, but 15mm on top and bottom is added by converter */
+      border-bottom: 2em solid #111;
     }
     & .contact-footer {
       @apply pt-12 pb-10;
@@ -34,14 +36,14 @@ html.document {
     & .contact-details {
       @apply -mt-2;
       & > div {
-        @apply pt-2;
+        @apply pt-3;
         & a {
           color: inherit;
           text-decoration: none;
           background: none;
         }
         & svg {
-          @apply mr-2 relative;
+          @apply mr-3 relative;
           top: 3px;
           fill: config('colors.blue');
         }

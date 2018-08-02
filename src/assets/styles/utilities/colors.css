@@ -10,6 +10,9 @@
 .bg-github {
   background: var(--github);
 }
+.text-mirage {
+  color: var(--mirage);
+}
 .bg-mirage {
   background: var(--mirage);
 }
