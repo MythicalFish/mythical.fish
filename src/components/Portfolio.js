@@ -23,7 +23,7 @@ class Portfolio extends React.Component {
     const { previewKey } = this.state
     return (
       <div className='pt-6 lg:pt-0'>
-        <h2 className='mb-6 text-center'>Portfolio</h2>
+        <h2 className='text-center'>Portfolio</h2>
         {projects.map(project => (
           <Project key={project.key} {...{ project, showProject }} />
         ))}

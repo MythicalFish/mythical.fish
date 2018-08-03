@@ -4,8 +4,7 @@
 .tag {
   @apply inline-block rounded-sm text-grey-dark leading-none text-xs px-2 py-1;
   font-weight: 500;
-  border: 1px solid config('colors.grey');
-  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid config('colors.grey-light');
   margin: 0.2rem 0.15rem;
   text-decoration: none;
 }

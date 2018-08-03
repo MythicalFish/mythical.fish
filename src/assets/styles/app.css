@@ -5,10 +5,10 @@
 @import 'components/theme';
 @import 'components/previewer';
 @import 'components/image-nav';
-@import 'components/document';
 @import 'utilities/tailwind'; /* Keep utils last */
 @import 'utilities/responsive-padding';
 @import 'utilities/sizing';
 @import 'utilities/colors';
 @import 'utilities/shadows';
 @import 'base/typography';
+@import 'modules/pdf-cv';

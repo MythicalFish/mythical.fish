@@ -3,6 +3,7 @@
   --github: #25292e;
   --mirage: #171e27;
   --mirage-light: #202835;
+  --mirage-lightest: #566784;
 }
 .bg-linkedin {
   background: var(--linkedin);
@@ -18,4 +19,7 @@
 }
 .bg-mirage-light {
   background: var(--mirage-light);
+}
+.text-mirage-lightest {
+  color: var(--mirage-lightest);
 }

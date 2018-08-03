@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
-import About from './About'
 import Portfolio from './Portfolio'
+import PageNumber from './PageNumber'
 import Font from './Font'
 import { HTMLContent } from '../Content'
 
@@ -11,44 +11,37 @@ class Layout extends React.Component {
   }
   render () {
     const { content } = this.props
-    const { info: { skills, superPowers } } = content
+    const { info: { skills, superPowers, about } } = content
     return (
       <div className='document-container'>
         <Font />
         <div className='page flex flex-col'>
           <div className='flex-none w-full p-10'><Header /></div>
-          <div className='flex-none w-full p-10 bg-grey-lighter'>
-            <h2 className='mb-6'>Bio</h2>
-            <About {...content} />
-          </div>
-          <div className='flex-auto flex p-10'>
-            <div>
-              <h2 className='mb-6'>Skills</h2>
-              <div className='mb-3'>
-                <HTMLContent>{skills.html}</HTMLContent>
-              </div>
-              <ul className='list-colored'>
-                {skills.itemList.map((item, key) => <li key={key}>{item}</li>)}
-              </ul>
+          <div className='flex-none w-full px-10'>
+            <div className='box text-justify'>
+              <h3>Bio</h3>
+              <HTMLContent>{about.html}</HTMLContent>
             </div>
-            <div className='w-1/2'>
-              <div>
-                <h2 className='mb-6'>Super Powers</h2>
-                <div className='mb-3'>
-                  <HTMLContent>{superPowers.html}</HTMLContent>
-                </div>
-                <ul className='list-colored'>
-                  {superPowers.itemList.map((item, key) => (
-                    <li key={key}>{item}</li>
-                  ))}
-                </ul>
+          </div>
+          <div className='flex-auto p-10'>
+            <div className='flex -mx-4 text-center'>
+              <div className='w-1/2 px-4'>
+                <h3>Skills</h3>
+                {skills.itemList.map((item, key) => (
+                  <div className='list-item' key={key}>{item}</div>
+                ))}
+              </div>
+              <div className='w-1/2 px-4'>
+                <h3>Super Powers</h3>
+                {superPowers.itemList.map((item, key) => (
+                  <div className='list-item' key={key}>{item}</div>
+                ))}
               </div>
             </div>
           </div>
+          <PageNumber n={1} />
         </div>
-        <div className='text-justify py-12 px-16'>
-          <Portfolio {...content} />
-        </div>
+        <Portfolio {...content} />
       </div>
     )
   }

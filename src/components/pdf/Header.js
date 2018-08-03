@@ -13,22 +13,22 @@ const Header = () => {
           <img
             src={jake}
             alt='Jake Broughton'
-            className='w-16 h-16 m-0 block'
+            className='w-24 h-24 m-0 block'
           />
           <div className='absolute pin shadow-custom-1 rounded-full' />
         </div>
         <div>
-          <div className='text-2xl font-semibold'>Jake Broughton</div>
-          <div className='text-1xl uppercase flex items-center leading-none'>
+          <div className='text-2xl'>Jake Broughton</div>
+          <div className='text-1xl uppercase flex items-center leading-none alt-font font-bold'>
             <Arrow className='text-blue text-2xl mr-1' />
-            <div className='pt-1'>
+            <div className='text-blue'>
               Full-stack engineer
             </div>
           </div>
         </div>
       </div>
       <div className='flex-none'>
-        <div className='contact-details'>
+        <div className='contact-details alt-font'>
           <div><Envelope /><span>jake@mythical.fish</span></div>
           <div>
             <Linkedin />

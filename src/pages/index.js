@@ -19,7 +19,7 @@ const parseData = data => {
 
 const IndexPage = ({ data, location }) => {
   const props = { content: parseData(data) }
-  if (location.pathname === '/pdf') return <PDFLayout {...props} />
+  if (['/pdf', '/pdf/'].includes(location.pathname)) { return <PDFLayout {...props} /> }
   return <Layout {...props} />
 }
 

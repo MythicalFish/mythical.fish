@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 /* This is a bit unconventional, I know. The reason I'm doing it this way is
 that I only want this font imported when this component is rendered. This is
@@ -7,8 +7,9 @@ nice fonts installed. */
 
 const Font = () => {
   return (
-    <style>
-      {`@font-face {
+    <Fragment>
+      <style>
+        {`@font-face {
           font-family: 'Avenir Next';
           src: url('/assets/fonts/AvenirNext/UltraLight.eot');
           src: url('/assets/fonts/AvenirNext/UltraLight.eot?#iefix')
@@ -44,7 +45,13 @@ const Font = () => {
           font-weight: 700;
           font-style: normal;
       }`}
-    </style>
+      </style>
+      <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700'
+        rel='stylesheet'
+      />
+
+    </Fragment>
   )
 }
 
