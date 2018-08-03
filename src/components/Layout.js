@@ -11,11 +11,11 @@ const Layout = ({ content }) => {
       </div>
       <div className='dark-theme w-full lg:w-3/5 lg:overflow-y-scroll'>
         <div className='bg-mirage'>
-          <div className='max-w-2xl p-3 sm:p-6 lg:p-10 xl:p-16'>
+          <div className='max-w-2xl p-3 sm:p-6 xl:p-20'>
             <Attributes {...content} />
           </div>
         </div>
-        <div className='p-3 sm:p-6 lg:p-10 xl:p-16'>
+        <div className='max-w-2xl sm:p-6 xl:p-20'>
           <Portfolio {...content} />
         </div>
       </div>

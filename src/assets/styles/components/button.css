@@ -1,5 +1,7 @@
 a:any-link {
-  color: config('colors.blue');
+  &:not(.btn) {
+    color: config('colors.blue');
+  }
 }
 button {
   outline: none;
@@ -12,14 +14,18 @@ button {
   @apply py-3 px-4 rounded-sm bg-blue inline-block leading-none;
   border: none;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.9);
   & svg {
     margin-bottom: -0.2em;
     transform: translateY(-0.08em);
   }
   &.btn-white {
     @apply bg-white text-grey-dark;
-    border: 1px solid config('colors.grey-dark');
+    border: 1px solid config('colors.grey');
+  }
+  &.btn-sm {
+    font-size: 0.9em;
+    @apply py-2 px-3;
   }
 }
 .btn-wrapper {

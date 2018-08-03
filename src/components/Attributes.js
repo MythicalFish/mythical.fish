@@ -1,5 +1,5 @@
 import React from 'react'
-import { HTMLContent } from './Content'
+import Content from './Content'
 
 const Attributes = ({ info: { skills, superPowers } }) => (
   <div className='flex flex-wrap -mx-3 text-center'>
@@ -7,7 +7,7 @@ const Attributes = ({ info: { skills, superPowers } }) => (
       <div className='bg-mirage-light p-cozy flex-auto'>
         <h2>Skills</h2>
         <div className='mb-3'>
-          <HTMLContent>{skills.html}</HTMLContent>
+          <Content>{skills.html}</Content>
         </div>
         <ul className='list-colored mb-3'>
           {skills.itemList.map((item, key) => <li key={key}>{item}</li>)}
@@ -26,7 +26,7 @@ const Attributes = ({ info: { skills, superPowers } }) => (
       <div className='bg-mirage-light p-cozy flex-auto'>
         <h2>Super powers</h2>
         <div className='mb-3'>
-          <HTMLContent>{superPowers.html}</HTMLContent>
+          <Content>{superPowers.html}</Content>
         </div>
         <ul className='list-colored'>
           {superPowers.itemList.map((item, key) => <li key={key}>{item}</li>)}

@@ -3,7 +3,7 @@ import Header from './Header'
 import Portfolio from './Portfolio'
 import PageNumber from './PageNumber'
 import Font from './Font'
-import { HTMLContent } from '../Content'
+import Content from '../Content'
 
 class Layout extends React.Component {
   componentDidMount () {
@@ -20,7 +20,7 @@ class Layout extends React.Component {
           <div className='flex-none w-full px-10'>
             <div className='box text-justify'>
               <h3>Bio</h3>
-              <HTMLContent>{about.html}</HTMLContent>
+              <Content>{about.html}</Content>
             </div>
           </div>
           <div className='flex-auto p-10'>

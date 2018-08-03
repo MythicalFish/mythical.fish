@@ -2,7 +2,7 @@ import React from 'react'
 import Github from './icons/brands/Github'
 import LinkedIn from './icons/brands/Linkedin'
 import jake from '../assets/images/jake-broughton.jpg'
-import { HTMLContent } from './Content'
+import Content from './Content'
 
 const About = ({ info: { bio } }) => (
   <div className='p-cozy self-center text-center max-w-35 text-grey-darker'>
@@ -30,7 +30,7 @@ const About = ({ info: { bio } }) => (
       </a>
     </div>
     <div className='mt-10'>
-      <HTMLContent>{bio.html}</HTMLContent>
+      <Content>{bio.html}</Content>
       <ul className='mt-4'>
         {bio.itemList.map((item, key) => <li key={key}>{item}</li>)}
       </ul>

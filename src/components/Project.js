@@ -1,12 +1,13 @@
 import React from 'react'
 import ProjectLinks from './ProjectLinks'
 import ProjectTags from './ProjectTags'
+import Content from './Content'
 import PreviewIcon from './icons/regular/Images'
 
 const Project = props => {
   const { project } = props
   return (
-    <div className='bg-mirage mb-4 sm:border-l-8 border-blue border-solid rounded'>
+    <div className='bg-mirage mb-4 sm:border-l-8 border-blue border-solid rounded xl:p-8'>
       <div className='px-cozy pt-cozy flex justify-between flex-wrap'>
         <div className='self-end'>
           <TitleWrapper {...props}>
@@ -18,10 +19,9 @@ const Project = props => {
           <ProjectTags {...props} />
         </div>
       </div>
-      <div
-        className='px-cozy py-6'
-        dangerouslySetInnerHTML={{ __html: project.html }}
-      />
+      <Content className='px-cozy py-6 lg:text-justify'>
+        {project.html}
+      </Content>
       <div className='px-cozy pb-cozy'>
         <ProjectLinks {...props} />
       </div>

@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import ProjectLinks from './ProjectLinks'
 import ProjectTags from './ProjectTags'
-import ChevronLeft from './icons/light/ChevronLeft'
-import ChevronRight from './icons/light/ChevronRight'
+import ChevronLeft from '../assets/images/icons/chevron-left.png'
+import ChevronRight from '../assets/images/icons/chevron-right.png'
 
 class Previewer extends React.Component {
   state = { currentKey: 0 }
@@ -45,15 +45,15 @@ class Previewer extends React.Component {
           {total > 1 &&
             <Fragment>
               <button className='nav-left' onClick={this.goLeft}>
-                <ChevronLeft />
+                <img src={ChevronLeft} />
               </button>
               <button className='nav-right' onClick={this.goRight}>
-                <ChevronRight />
+                <img src={ChevronRight} />
               </button>
             </Fragment>}
           <img src={current.image} className='block m-0' />
         </div>
-        <div className='flex flex-col justify-between'>
+        <div className='flex-auto flex flex-col justify-between'>
           <div className='px-4 py-5'>
             <div className='mb-5'>
               <h3 className='mb-2 text-grey-dark'>{project.title}</h3>
@@ -75,9 +75,9 @@ class Previewer extends React.Component {
             </div>
           </div>
           {nextProject &&
-            <div className='px-4 py-5'>
+            <div className='px-4 py-5 text-right'>
               <button
-                className='btn btn-white'
+                className='btn btn-white btn-sm'
                 onClick={() => showProject(nextProject.key)}
               >{`Next project: ${nextProject.title}`}</button>
             </div>}
