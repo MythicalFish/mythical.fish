@@ -12,6 +12,9 @@ h6 {
     margin-top: 2em;
   }
 }
+h2 {
+  font-size: 1.5em;
+}
 p:not(:last-child),
 p:not(:only-child) {
   margin-bottom: 1em;

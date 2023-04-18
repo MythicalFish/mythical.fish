@@ -27,11 +27,11 @@ const Header = () => {
       </div>
       <div className="flex-none">
         <div className="contact-details alt-font">
-          <div>
+          <div className="flex">
             <Envelope />
             <span>jake@mythical.fish</span>
           </div>
-          <div>
+          <div className="flex">
             <Linkedin />
             <a
               href="https://www.linkedin.com/in/jakebroughton/"
@@ -40,7 +40,7 @@ const Header = () => {
               /in/jakebroughton
             </a>
           </div>
-          <div>
+          <div className="flex">
             <Github />
             <a href="https://github.com/MythicalFish" target="_blank">
               /MythicalFish

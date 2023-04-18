@@ -16,8 +16,9 @@ html.document {
       font-weight: 600;
     }
     & .project-link {
+			display: inline-flex;
       background-image: none;
-      @apply text-blue-400 inline-block p-2;
+      @apply text-blue-400 p-2;
       font-size: 0.9em;
       & svg {
         position: relative;
@@ -59,10 +60,10 @@ html.document {
     font-family: "Open Sans", sans-serif;
   }
   & .box {
-    @apply p-10 border-2 border-zinc-600;
+    @apply p-10 border-2 border-zinc-300;
   }
-  & .list-item {
-    @apply px-2 py-3 border-2 border-zinc-600 leading-none;
+  & .item {
+    @apply px-2 py-3 border-2 border-zinc-300 leading-none;
     &:not(:first-child) {
       @apply mt-2;
     }

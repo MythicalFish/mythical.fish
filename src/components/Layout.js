@@ -7,7 +7,7 @@ const Layout = ({ content }) => {
   return (
     <>
       <div className="flex flex-wrap lg:overflow-hidden">
-        <div className="w-full lg:w-2/5 flex justify-center lg:overflow-y-scroll lg:h-screen">
+        <div className="w-full lg:w-2/5 flex justify-center lg:overflow-y-auto lg:h-screen">
           <About {...content} />
         </div>
         <div className="dark-theme w-full lg:w-3/5 lg:overflow-y-scroll lg:h-screen">

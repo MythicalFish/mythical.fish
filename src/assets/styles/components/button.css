@@ -32,7 +32,7 @@ button {
 .btn-wrapper {
   background: transparent;
   padding: 0;
-  display: block;
+  display: flex;
   border: none;
   font-family: inherit;
   font-size: inherit;
