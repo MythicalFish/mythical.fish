@@ -3,9 +3,9 @@ type: info
 visible: true
 key: superPowers
 itemList:
+  - Extremely adaptable, multi-skilled
   - Seriously full-stack + an eye for design
-  - Experienced project planner & manager
-  - Always learning
+  - 11+ years professional experience
   - Solid communication & social skills
   - Innately positive & proactive
   - Creative thinker, problem solver
