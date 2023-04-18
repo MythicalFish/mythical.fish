@@ -1,8 +1,8 @@
 html.document {
   font-size: 100%;
   background: #222;
-  @apply text-grey-dark;
-  font-family: 'Avenir Next', sans-serif;
+  @apply text-zinc-800;
+  font-family: "Avenir Next", sans-serif;
   font-weight: 400;
   & .document-container {
     margin: 0 auto;
@@ -12,17 +12,17 @@ html.document {
     & h2,
     & h3,
     & h4 {
-      @apply text-mirage-lightest;
+      @apply text-zinc-800;
       font-weight: 600;
     }
     & .project-link {
       background-image: none;
-      @apply text-blue inline-block p-2;
+      @apply text-blue-400 inline-block p-2;
       font-size: 0.9em;
       & svg {
         position: relative;
         top: 2px;
-        @apply text-grey;
+        @apply text-zinc-600;
       }
     }
     & .page {
@@ -31,7 +31,7 @@ html.document {
     }
     & .contact-footer {
       @apply pt-12 pb-10;
-      border-top: 8px solid config('colors.blue');
+      border-top: 8px solid theme(colors.blue.400);
     }
     & .contact-details {
       @apply -mt-2;
@@ -46,23 +46,23 @@ html.document {
         & svg {
           @apply mr-3 relative;
           top: 3px;
-          fill: config('colors.blue');
+          fill: theme(colors.blue.400);
         }
       }
     }
     & .doc-title {
-      border-left: 1rem solid config('colors.blue');
+      border-left: 1rem solid theme(colors.blue.400);
       @apply pl-4 leading-none;
     }
   }
   & .alt-font {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   & .box {
-    @apply p-10 border-2 border-grey-light;
+    @apply p-10 border-2 border-zinc-600;
   }
   & .list-item {
-    @apply px-2 py-3 border-2 border-grey-light leading-none;
+    @apply px-2 py-3 border-2 border-zinc-600 leading-none;
     &:not(:first-child) {
       @apply mt-2;
     }
@@ -71,7 +71,7 @@ html.document {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    color: config('colors.grey');
+    color: themecolors.gray.500);
     opacity: 0.7;
     font-size: 0.8rem;
     line-height: 1;

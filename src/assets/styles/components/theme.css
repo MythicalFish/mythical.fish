@@ -1,5 +1,5 @@
 .dark-theme {
-  @apply bg-mirage-light;
+  @apply bg-slate-800;
   color: rgba(255, 255, 255, 0.6);
   & h1,
   & h2,
@@ -9,11 +9,11 @@
   }
   & .tag,
   & .icon-tag {
-    @apply text-blue;
-    border-color: config('colors.grey-darker');
+    @apply text-blue-400;
+    border-color: theme(colors.gray.800);
     background: rgba(0, 0, 0, 0.2);
   }
   & .content-box {
-    @apply bg-grey-darkest border-0 border-l-8 border-blue border-solid;
+    @apply bg-zinc-950 border-0 border-l-8 border-blue-400 border-solid;
   }
 }

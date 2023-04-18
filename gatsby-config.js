@@ -1,38 +1,23 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
-    title: 'Mythical Fish'
+    title: `mythical.fish`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    { resolve: "gatsby-plugin-mdx" },
+    { resolve: "gatsby-transformer-remark" },
+    // { resolve: "gatsby-plugin-netlify-cms" },
+    { resolve: `gatsby-plugin-postcss` },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/static/content`,
-        name: 'projects'
-      }
+        name: "content",
+      },
+      __key: "content",
     },
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {}
-    },
-    'gatsby-transformer-remark',
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: './src/assets/images/favicon.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
-      }
-    }
-  ]
-}
+  ],
+};

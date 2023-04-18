@@ -24,7 +24,7 @@
     padding: 1rem;
   }
 }
-@media (max-width: config('screens.lg')) {
+@media (max-width: theme("screens.lg")) {
   .modal-close {
     width: 100%;
     display: block;

@@ -1,14 +1,3 @@
-@import 'components/tag';
-@import 'components/button';
-@import 'components/list';
-@import 'components/modal';
-@import 'components/theme';
-@import 'components/previewer';
-@import 'components/image-nav';
-@import 'utilities/tailwind'; /* Keep utils last */
-@import 'utilities/responsive-padding';
-@import 'utilities/sizing';
-@import 'utilities/colors';
-@import 'utilities/shadows';
-@import 'base/typography';
-@import 'modules/pdf-cv';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

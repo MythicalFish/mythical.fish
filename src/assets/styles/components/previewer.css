@@ -1,7 +1,7 @@
 .previewer {
   @apply flex;
 }
-@media (max-width: config('screens.lg')) {
+@media (max-width: theme("screens.lg")) {
   .previewer {
     flex-wrap: wrap;
   }

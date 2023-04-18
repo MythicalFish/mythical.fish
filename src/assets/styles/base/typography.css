@@ -18,5 +18,5 @@ p:not(:only-child) {
 }
 html {
   font-size: 112.5%;
-  @apply font-sans font-light text-grey-darker leading-normal;
+  @apply font-sans font-light text-zinc-900 leading-normal;
 }

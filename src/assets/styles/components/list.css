@@ -15,11 +15,11 @@ ul {
       display: inline-block;
       width: 0.8em;
       height: 0.8em;
-      content: '';
-      mask: url('../images/icons/star.svg');
+      content: "";
+      mask: url("../../images/icons/star.svg");
       -webkit-mask-size: contain;
       -webkit-mask-repeat: no-repeat;
-      background-color: config('colors.blue');
+      background-color: theme(colors.blue.400);
       @apply mr-2;
       margin-bottom: -0.1em;
     }
@@ -27,7 +27,7 @@ ul {
   &.check-list {
     & li {
       &:before {
-        content: '\f00c';
+        content: "\f00c";
         font-size: 1.5em;
       }
     }
@@ -35,7 +35,7 @@ ul {
   &.list-colored {
     & li {
       &:before {
-        @apply text-blue;
+        @apply text-blue-400;
       }
     }
   }
