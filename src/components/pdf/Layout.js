@@ -14,8 +14,8 @@ class Layout extends React.Component {
     return (
       <div className="document-container">
         <Font />
-        <div className="page flex flex-col">
-          <div className="flex-none w-full p-10">
+        <div className="page">
+          <div className="px-10 pt-10 pb-4">
             <Header />
           </div>
           <About content={content} />
