@@ -7,7 +7,8 @@ module.exports = {
     siteUrl: `https://mythical.fish`,
     twitterUsername: "MythicalFish",
     image: "/assets/images/opengraph.png",
-    description: "",
+    description:
+      "11+ years professional experience. Typescript, React, Redux, GraphQL, Docker, Golang, Ruby",
   },
   plugins: [
     { resolve: "gatsby-plugin-mdx" },
