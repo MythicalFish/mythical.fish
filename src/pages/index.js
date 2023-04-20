@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PDFLayout from "../components/pdf/Layout";
+import { SEO } from "../components/SEO";
 
 import "../assets/styles/app.css";
 import "../assets/styles/components/tag.css";
@@ -88,3 +89,5 @@ export const indexQuery = graphql`
     }
   }
 `;
+
+export const Head = () => <SEO />;

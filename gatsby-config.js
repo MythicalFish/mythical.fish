@@ -3,8 +3,11 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `mythical.fish`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Jake Broughton - Full-stack software engineer`,
+    siteUrl: `https://mythical.fish`,
+    twitterUsername: "MythicalFish",
+    image: "/assets/images/opengraph.png",
+    description: "",
   },
   plugins: [
     { resolve: "gatsby-plugin-mdx" },
