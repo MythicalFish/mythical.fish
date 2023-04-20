@@ -26,11 +26,11 @@ const ProjectLinks = (props) => {
 export default ProjectLinks;
 
 const Link = (props) => {
-  const { url } = props;
+  const { url, label } = props;
   return (
     <a href={url} target="_blank" className="project-link">
       <LinkIcon className="text-xs mr-2" />
-      {url.split("https://")[1]}
+      {label}
     </a>
   );
 };

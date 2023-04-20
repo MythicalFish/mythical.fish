@@ -8,7 +8,7 @@ tags:
   - Golang
 links:
   - label: cryptowat.ch
-    url: https://www.cryptowat.ch
+    url: https://cryptowat.ch
 position: 10
 previews:
   - image: /content/images/cryptowatch-1.jpg

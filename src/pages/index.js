@@ -12,7 +12,6 @@ import "../assets/styles/components/modal.css";
 import "../assets/styles/components/theme.css";
 import "../assets/styles/components/previewer.css";
 import "../assets/styles/components/image-nav.css";
-import "../assets/styles/utilities/tailwind.css"; /* Keep utils last */
 import "../assets/styles/utilities/responsive-padding.css";
 import "../assets/styles/utilities/sizing.css";
 import "../assets/styles/utilities/colors.css";
@@ -21,9 +20,6 @@ import "../assets/styles/base/typography.css";
 import "../assets/styles/modules/pdf-cv.css";
 
 const parseData = (data) => {
-  if (!data?.projects) {
-    return { project: [], info: [] };
-  }
   const projects = data.projects.edges.map(
     ({ node: { frontmatter, ...rest } }, key) => ({
       ...frontmatter,
