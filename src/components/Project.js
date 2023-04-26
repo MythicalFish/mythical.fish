@@ -13,6 +13,9 @@ const Project = (props) => {
           <TitleWrapper {...props}>
             <h3 className="my-0 mr-3 inline-block">{project.title}</h3>
           </TitleWrapper>
+          {!!project.date && (
+            <div className="pt-2 text-zinc-500 text-sm">{project.date}</div>
+          )}
         </div>
         <div className="w-full h-3 md:hidden" />
         <div>

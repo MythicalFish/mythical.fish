@@ -70,6 +70,7 @@ export const indexQuery = graphql`
             title
             tags
             privateCode
+            date
             links {
               label
               url

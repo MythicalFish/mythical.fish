@@ -1,7 +1,7 @@
 import React from "react";
 import Github from "./icons/brands/Github";
 import LinkedIn from "./icons/brands/Linkedin";
-import jake from "../assets/images/jake-broughton.jpg";
+import jake from "../assets/images/jake-broughton-2.jpg";
 import Content from "./Content";
 
 const About = ({ info: { bio } }) => (
