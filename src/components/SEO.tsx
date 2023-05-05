@@ -1,7 +1,7 @@
 import React from "react";
 import { useSiteMetadata } from "../hooks/metadata";
 
-export const SEO = ({ children }) => {
+export const SEO: React.FC = () => {
   const { title, description, image, siteUrl, twitterUsername } =
     useSiteMetadata();
 
@@ -16,7 +16,6 @@ export const SEO = ({ children }) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:creator" content={twitterUsername} />
-      {children}
     </>
   );
 };

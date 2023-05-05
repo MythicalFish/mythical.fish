@@ -4,7 +4,13 @@ import LinkedIn from "./icons/brands/Linkedin";
 import jake from "../assets/images/jake-broughton-2.jpg";
 import Content from "./Content";
 
-const About = ({ info: { bio } }) => (
+import { InfoProps } from "types";
+
+type Props = {
+  bio: InfoProps;
+};
+
+const About: React.FC<Props> = ({ bio }) => (
   <div className="p-cozy self-center text-center max-w-35 text-zinc-900">
     <div className="inline-block rounded-full overflow-hidden leading-none mb-4 relative">
       <img src={jake} alt="Jake Broughton" className="w-32 m-0 block" />

@@ -1,4 +1,8 @@
-export const tagURLs = {
+type TagURLs = {
+  [key: string]: string;
+};
+
+export const tagURLs: TagURLs = {
   Rails: "http://rubyonrails.org/",
   React: "https://reactjs.org/",
   Vue: "https://vuejs.org/",

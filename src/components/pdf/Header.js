@@ -3,7 +3,6 @@ import Envelope from "../icons/regular/At";
 import Github from "../icons/brands/Github";
 import Linkedin from "../icons/brands/Linkedin";
 import Arrow from "../icons/regular/AngleDoubleRight";
-import jake from "../../assets/images/jake-broughton.jpg";
 
 const Header = () => {
   return (

@@ -19,7 +19,39 @@ import "../assets/styles/utilities/shadows.css";
 import "../assets/styles/base/typography.css";
 import "../assets/styles/modules/pdf-cv.css";
 
-const parseData = (data) => {
+import { InfoProps, ProjectProps } from "src/types";
+
+type GraphqlData = {
+  info: {
+    edges: [
+      {
+        node: {
+          html: string;
+          frontmatter: InfoProps;
+        };
+      }
+    ];
+  };
+  projects: {
+    edges: [
+      {
+        node: {
+          html: string;
+          frontmatter: ProjectProps;
+        };
+      }
+    ];
+  };
+};
+
+type AllInfoProps = { [key: string]: InfoProps };
+
+export type AllContent = {
+  info: AllInfoProps;
+  projects: ProjectProps[];
+};
+
+const parseData = (data: GraphqlData): AllContent => {
   const projects = data.projects.edges.map(
     ({ node: { frontmatter, ...rest } }, key) => ({
       ...frontmatter,
@@ -27,19 +59,22 @@ const parseData = (data) => {
       key,
     })
   );
-  const info = {};
+  const info: AllInfoProps = {};
   data.info.edges.forEach(({ node: { frontmatter, html } }) => {
     info[frontmatter.key] = { html, ...frontmatter };
   });
   return { projects, info };
 };
 
-const IndexPage = ({ data, location }) => {
-  const props = { content: parseData(data) };
+const IndexPage: React.FC<{
+  data: GraphqlData;
+  location: Window["location"];
+}> = ({ data, location }) => {
+  const content = parseData(data);
   if (location.search === "?pdf=1") {
-    return <PDFLayout {...props} />;
+    return <PDFLayout content={content} />;
   }
-  return <Layout {...props} />;
+  return <Layout content={content} />;
 };
 
 export default IndexPage;
