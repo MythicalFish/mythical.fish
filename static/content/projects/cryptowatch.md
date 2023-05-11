@@ -15,7 +15,7 @@ previews:
     label: Homepage
 privateCode: true
 visible: true
-date: Sep 2018 - Dec 2023
+date: Sep 2018 - Nov 2022
 ---
 I had a lot of fun working on this project alongside a fantastic team of talented engineers. In the first year, I was really involved in general improvements to the codebase, assisted in implementing a coding style guide, and arranged regular meetings for frontend engineers. I tackled huge amounts of tech debt, revamped the CSS, advocated for the adoption of Tailwind, worked on performance optimization, and even developed backend functionality in Golang. Afterwards our attention shifted towards feature delivery. Some of the more prominent features I personally developed include the credits/payment & subscriptions system, and the utility belt. 
 
