@@ -13,8 +13,8 @@ html.document {
       content: " ";
       display: block;
       width: 310px;
-      height: 262px;
-      background-image: url("../../images/fish.png");
+      height: 266px;
+      background-image: url("../../images/fish2.png");
       background-repeat: no-repeat;
       background-position: left bottom;
       background-size: 450px;
@@ -26,7 +26,7 @@ html.document {
     & h2,
     & h3,
     & h4 {
-      @apply text-zinc-800;
+      @apply text-slate-600;
       font-weight: 600;
     }
     & h2 {
@@ -61,10 +61,6 @@ html.document {
       height: 297mm;
       position: relative;
     }
-    & .contact-footer {
-      @apply pt-12 pb-10;
-      border-top: 8px solid theme(colors.blue.400);
-    }
     & .contact-details {
       & > div {
         display: inline-flex;
@@ -92,17 +88,7 @@ html.document {
     font-family: "Open Sans", sans-serif;
   }
   & .box {
-    @apply p-10 border-4 border-zinc-200;
-  }
-  & .box2 {
-    @apply p-10;
-    position: relative;
-    & h2 {
-      position: absolute;
-      top: -10px;
-      left: 10px;
-      background-color: #fff;
-    }
+    @apply p-10 border-4 border-slate-300;
   }
   & .item {
     @apply px-2 py-3 border-2 border-zinc-300 leading-none;
