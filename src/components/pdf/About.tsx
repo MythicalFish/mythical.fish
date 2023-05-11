@@ -12,7 +12,7 @@ const About: React.FC<Props> = ({ content }) => {
   return (
     <>
       <div className="px-10 mb-4">
-        <div className="box">
+        <div className="box" id="bio">
           <h3>Bio</h3>
           <Content>{about.html}</Content>
         </div>

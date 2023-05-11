@@ -2,9 +2,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  flags: {
-    DEV_SSR: true,
-  },
   siteMetadata: {
     title: `Jake Broughton - Full-stack software engineer`,
     siteUrl: `https://mythical.fish`,

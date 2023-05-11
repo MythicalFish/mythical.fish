@@ -5,9 +5,23 @@ html.document {
   font-family: "Avenir Next", sans-serif;
   font-weight: 400;
   & .document-container {
+    background-color: #fff;
     margin: 0 auto;
-    background: #fff;
     width: 210mm;
+    position: relative;
+    &:after {
+      content: " ";
+      display: block;
+      width: 310px;
+      height: 262px;
+      background-image: url("../../images/fish.png");
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 450px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
     & h1,
     & h2,
     & h3,
@@ -15,10 +29,24 @@ html.document {
       @apply text-zinc-800;
       font-weight: 600;
     }
+    & h2 {
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 2px;
+        background: theme(colors.rose.400);
+      }
+    }
     & .project-link {
-			display: inline-flex;
+      display: inline-flex;
       background-image: none;
-      @apply text-blue-400 p-2;
+      @apply text-rose-500 p-2;
       font-size: 0.9em;
       & svg {
         position: relative;
@@ -36,19 +64,19 @@ html.document {
     }
     & .contact-details {
       & > div {
-				display: inline-flex;
-				align-items: center;
-			  line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
         font-size: 0.9em;
-				margin-right: 10px;
+        margin-right: 14px;
         & a {
           color: inherit;
           text-decoration: none;
           background: none;
         }
         & svg {
-					margin-right: 4px;
-          fill: theme(colors.blue.400);
+          margin-right: 4px;
+          fill: currentColor;
         }
       }
     }
@@ -61,7 +89,7 @@ html.document {
     font-family: "Open Sans", sans-serif;
   }
   & .box {
-    @apply p-10 border-2 border-zinc-300;
+    @apply p-10 border-4 border-zinc-200;
   }
   & .item {
     @apply px-2 py-3 border-2 border-zinc-300 leading-none;
@@ -73,9 +101,37 @@ html.document {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    color: themecolors.gray.500);
+    color: theme(colors.gray.500);
     opacity: 0.7;
     font-size: 0.8rem;
     line-height: 1;
+  }
+  & .tag {
+    font-size: 0.9rem;
+    border-width: 2px;
+    padding-top: 0.45rem;
+  }
+  & .tags .tag {
+    padding-top: 0.25rem;
+    color: theme(colors.rose.500);
+  }
+  & #bio {
+    & u {
+      text-decoration: none;
+      position: relative;
+      &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 2px;
+        background: theme(colors.rose.400);
+      }
+    }
+  }
+  & ul li:before {
+    background-color: theme(colors.rose.400);
   }
 }
