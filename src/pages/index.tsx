@@ -19,7 +19,7 @@ import "../assets/styles/utilities/shadows.css";
 import "../assets/styles/base/typography.css";
 import "../assets/styles/modules/pdf-cv.css";
 
-import { InfoProps, ProjectProps } from "src/types";
+import { InfoProps, ProjectProps } from "types";
 
 type GraphqlData = {
   info: {

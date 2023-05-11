@@ -1,8 +1,13 @@
 import React from "react";
 import ProjectLinks from "./ProjectLinks";
 import ProjectTags from "../ProjectTags";
+import { ProjectProps } from "types";
 
-const Project = (props) => {
+type Props = {
+  project: ProjectProps;
+};
+
+const Project: React.FC<Props> = (props) => {
   const { project } = props;
   return (
     <div className="box mb-4">
@@ -14,7 +19,7 @@ const Project = (props) => {
           )}
         </div>
         <div className="alt-font">
-          <ProjectTags {...props} />
+          <ProjectTags tags={project.tags} />
         </div>
       </div>
       <div

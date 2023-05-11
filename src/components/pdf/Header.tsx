@@ -18,11 +18,11 @@ const Header = () => {
       <div>
         <div className="contact-details alt-font">
           <div>
-            <AtSymbol />
+            <AtSymbol width={18} />
             <span>jake@mythical.fish</span>
           </div>
           <div>
-            <LinkedIn />
+            <LinkedIn width={18} />
             <a
               href="https://www.linkedin.com/in/jakebroughton/"
               target="_blank"
@@ -31,7 +31,7 @@ const Header = () => {
             </a>
           </div>
           <div>
-            <Github />
+            <Github width={18} />
             <a href="https://github.com/MythicalFish" target="_blank">
               /MythicalFish
             </a>

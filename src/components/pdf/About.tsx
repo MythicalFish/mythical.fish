@@ -1,7 +1,13 @@
 import React from "react";
 import Content from "../Content";
 
-const About = ({ content }) => {
+import { AllContent } from "pages";
+
+type Props = {
+  content: AllContent;
+};
+
+const About: React.FC<Props> = ({ content }) => {
   const { skillsList, about } = content.info;
   return (
     <>

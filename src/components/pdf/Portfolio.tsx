@@ -1,12 +1,19 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { chunk } from "lodash";
+
 import Project from "./Project";
 import PageNumber from "./PageNumber";
-import _ from "lodash";
 
-const Portfolio = ({ content: { projects } }) => {
+import { AllContent } from "pages";
+
+type Props = {
+  content: AllContent;
+};
+
+const Portfolio: React.FC<Props> = ({ content: { projects } }) => {
   return (
     <>
-      {_.chunk(projects, 2).map((chunk, i) => {
+      {chunk(projects, 2).map((chunk, i) => {
         return (
           <>
             <div key={i} className="page p-10">
