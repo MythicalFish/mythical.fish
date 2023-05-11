@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from "react";
 import ReactDOM from "react-dom";
 
-import CloseIcon from "./icons/light/Times";
+import CloseIcon from "../assets/images/icons/x-mark.svg";
 
 type ModalContentProps = { children: React.ReactNode; closeFunc: () => void };
 
@@ -13,7 +13,7 @@ const ModalContent: React.FC<ModalContentProps> = ({ children, closeFunc }) => {
     <div className="modal-content">
       {children}
       <button className="modal-close" onClick={handleClickOutside}>
-        <CloseIcon />
+        <CloseIcon width={18} />
       </button>
     </div>
   );
@@ -36,6 +36,8 @@ const Modal: React.FC<ModalProps> = ({ closeFunc, isOpen, children }) => {
       document.removeEventListener("keydown", handleKeyPress, false);
     };
   }, []);
+
+  if (typeof document === "undefined") return null;
 
   const modalContainer = document.getElementById("modal");
 

@@ -1,6 +1,7 @@
 import React from "react";
-import LinkIcon from "../icons/regular/Link";
-import LockIcon from "../icons/regular/Lock";
+
+import LinkIcon from "../../assets/images/icons/link.svg";
+import LockIcon from "../../assets/images/icons/lock.svg";
 
 const ProjectLinks = (props) => {
   const {

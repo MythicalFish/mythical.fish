@@ -2,6 +2,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+  },
   siteMetadata: {
     title: `Jake Broughton - Full-stack software engineer`,
     siteUrl: `https://mythical.fish`,
@@ -27,6 +30,14 @@ module.exports = {
         name: "content",
       },
       __key: "content",
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /icons/,
+        },
+      },
     },
   ],
 };

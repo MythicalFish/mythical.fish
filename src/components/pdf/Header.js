@@ -1,8 +1,9 @@
 import React from "react";
-import Envelope from "../icons/regular/At";
-import Github from "../icons/brands/Github";
-import Linkedin from "../icons/brands/Linkedin";
-import Arrow from "../icons/regular/AngleDoubleRight";
+
+import Github from "../../assets/images/icons/github.svg";
+import LinkedIn from "../../assets/images/icons/linkedin.svg";
+import AtSymbol from "../../assets/images/icons/at.svg";
+import Arrow from "../../assets/images/icons/angle-double-right.svg";
 
 const Header = () => {
   return (
@@ -17,11 +18,11 @@ const Header = () => {
       <div>
         <div className="contact-details alt-font">
           <div>
-            <Envelope />
+            <AtSymbol />
             <span>jake@mythical.fish</span>
           </div>
           <div>
-            <Linkedin />
+            <LinkedIn />
             <a
               href="https://www.linkedin.com/in/jakebroughton/"
               target="_blank"

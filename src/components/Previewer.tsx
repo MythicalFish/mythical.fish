@@ -4,8 +4,8 @@ import ProjectLinks from "./ProjectLinks";
 import ProjectTags from "./ProjectTags";
 import Content from "./Content";
 
-import ChevronLeft from "../assets/images/icons/chevron-left.png";
-import ChevronRight from "../assets/images/icons/chevron-right.png";
+import ChevronLeft from "../assets/images/icons/chevron-left.svg";
+import ChevronRight from "../assets/images/icons/chevron-right.svg";
 
 import { ProjectProps } from "types";
 
@@ -58,10 +58,10 @@ const Previewer: React.FC<Props> = ({ project, showProject, nextProject }) => {
         {total > 1 && (
           <Fragment>
             <button className="nav-left" onClick={goLeft}>
-              <img src={ChevronLeft} />
+              <ChevronLeft width={18} />
             </button>
             <button className="nav-right" onClick={goRight}>
-              <img src={ChevronRight} />
+              <ChevronRight width={18} />
             </button>
           </Fragment>
         )}

@@ -16,7 +16,7 @@ ul {
       width: 0.8em;
       height: 0.8em;
       content: "";
-      mask: url("../../images/icons/star.svg");
+      mask: url("./star.svg");
       -webkit-mask-size: contain;
       -webkit-mask-repeat: no-repeat;
       background-color: theme(colors.blue.400);

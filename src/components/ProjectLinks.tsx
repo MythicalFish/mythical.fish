@@ -1,8 +1,9 @@
 import React from "react";
-import LinkIcon from "./icons/light/Link";
-import Github from "./icons/brands/Github";
-import PreviewIcon from "./icons/regular/Images";
-import LockIcon from "./icons/light/Lock";
+
+import Github from "../assets/images/icons/github.svg";
+import PreviewIcon from "../assets/images/icons/images.svg";
+import LinkIcon from "../assets/images/icons/link.svg";
+import LockIcon from "../assets/images/icons/lock.svg";
 
 import { ProjectProps } from "types";
 
@@ -53,12 +54,12 @@ const Link: React.FC<LinkProps> = (props) => {
         <span>
           {url ? (
             url.includes("github.com") ? (
-              <Github />
+              <Github width={15} />
             ) : (
-              <LinkIcon />
+              <LinkIcon width={15} />
             )
           ) : (
-            <PreviewIcon />
+            <PreviewIcon width={15} />
           )}
         </span>
         <span>{label}</span>

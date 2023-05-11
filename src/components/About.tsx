@@ -1,6 +1,6 @@
 import React from "react";
-import Github from "./icons/brands/Github";
-import LinkedIn from "./icons/brands/Linkedin";
+import Github from "../assets/images/icons/github.svg";
+import LinkedIn from "../assets/images/icons/linkedin.svg";
 import jake from "../assets/images/jake-broughton-2.jpg";
 import Content from "./Content";
 
@@ -23,7 +23,7 @@ const About: React.FC<Props> = ({ bio }) => (
         href="https://www.linkedin.com/in/jakebroughton/"
         target="_blank"
       >
-        <LinkedIn className="mr-2" />
+        <LinkedIn className="mr-2 inline-block -mt-1" width={18} />
         LinkedIn
       </a>
       <a
@@ -31,7 +31,7 @@ const About: React.FC<Props> = ({ bio }) => (
         href="https://github.com/MythicalFish/"
         target="_blank"
       >
-        <Github className="mr-2" />
+        <Github className="mr-2 inline-block -mt-1" width={18} />
         GitHub
       </a>
     </div>

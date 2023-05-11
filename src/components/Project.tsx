@@ -1,8 +1,11 @@
 import React from "react";
+
 import ProjectLinks from "./ProjectLinks";
 import ProjectTags from "./ProjectTags";
 import Content from "./Content";
-import PreviewIcon from "./icons/regular/Images";
+
+import PreviewIcon from "../assets/images/icons/images.svg";
+
 import { ProjectProps } from "types";
 
 type Props = {
@@ -26,7 +29,10 @@ const TitleWrapper: React.FC<TitleProps> = ({
     return (
       <button onClick={() => showProject(key)} className="btn-wrapper">
         {children}
-        <PreviewIcon />
+        <PreviewIcon
+          width={18}
+          style={{ position: "relative", bottom: "-1px" }}
+        />
       </button>
     );
   } else {
