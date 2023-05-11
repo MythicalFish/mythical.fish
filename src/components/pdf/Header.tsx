@@ -9,20 +9,22 @@ const Header = () => {
   return (
     <>
       <div className="mb-4">
-        <div className="text-4xl">Jake Broughton</div>
-        <div className="text-1xl flex items-center leading-none alt-font font-bold">
-          <Arrow className="text-rose-300 text-2xl mr-1" />
-          <div className="text-rose-500">FULL-STACK ENGINEER (11+ yrs)</div>
+        <div className="text-4xl mb-2">Jake Broughton</div>
+        <div className="text-xl flex items-center leading-none alt-font font-bold">
+          <div className="text-slate-600">
+            FULL-STACK ENGINEER{" "}
+            <span className="text-slate-400">(11+ yrs)</span>
+          </div>
         </div>
       </div>
       <div>
-        <div className="contact-details alt-font">
+        <div className="contact-details alt-font text-slate-600">
           <div>
-            <AtSymbol width={17} className="text-slate-400" />
+            <AtSymbol width={17} className="text-rose-500" />
             <span>jake@mythical.fish</span>
           </div>
           <div>
-            <LinkedIn width={16} className="text-slate-400" />
+            <LinkedIn width={16} className="text-rose-500" />
             <a
               href="https://www.linkedin.com/in/jakebroughton/"
               target="_blank"
@@ -31,7 +33,7 @@ const Header = () => {
             </a>
           </div>
           <div>
-            <Github width={18} className="text-slate-400" />
+            <Github width={18} className="text-rose-500" />
             <a href="https://github.com/MythicalFish" target="_blank">
               /MythicalFish
             </a>

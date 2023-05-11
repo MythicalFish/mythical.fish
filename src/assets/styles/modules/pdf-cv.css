@@ -39,20 +39,23 @@ html.document {
         left: 0;
         right: 0;
         bottom: -1px;
-        height: 2px;
+        height: 3px;
         background: theme(colors.rose.400);
       }
     }
     & .project-link {
       display: inline-flex;
       background-image: none;
-      @apply text-rose-500 p-2;
+      @apply text-slate-500 p-2;
       font-size: 0.9em;
       & svg {
         position: relative;
         top: 2px;
-        @apply text-zinc-600;
+        @apply text-rose-500;
       }
+    }
+    & a.project-link {
+      font-weight: 600;
     }
     & .page {
       height: 297mm;
@@ -91,6 +94,16 @@ html.document {
   & .box {
     @apply p-10 border-4 border-zinc-200;
   }
+  & .box2 {
+    @apply p-10;
+    position: relative;
+    & h2 {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      background-color: #fff;
+    }
+  }
   & .item {
     @apply px-2 py-3 border-2 border-zinc-300 leading-none;
     &:not(:first-child) {
@@ -111,9 +124,27 @@ html.document {
     border-width: 2px;
     padding-top: 0.45rem;
   }
-  & .tags .tag {
-    padding-top: 0.25rem;
-    color: theme(colors.rose.500);
+  & .tags {
+    margin: -0.2rem -0.25rem;
+    & .tag {
+      padding: 0.25rem 0.6rem;
+      border-radius: 0;
+      color: theme(colors.slate.500);
+      border: none;
+      margin: 0.2rem 0.25rem;
+      position: relative;
+      &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        left: -2px;
+        top: 50%;
+        height: 6px;
+        width: 6px;
+        transform: translateY(-50%);
+        background: theme(colors.rose.500);
+      }
+    }
   }
   & #bio {
     & u {
@@ -132,6 +163,6 @@ html.document {
     }
   }
   & ul li:before {
-    background-color: theme(colors.rose.400);
+    background-color: theme(colors.rose.500);
   }
 }
