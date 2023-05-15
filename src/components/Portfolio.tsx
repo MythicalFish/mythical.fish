@@ -26,17 +26,15 @@ const Portfolio: React.FC<Props> = ({ projects }) => {
   }, [previewKey]);
 
   const showProject = setPreviewKey;
-  const getNextProject = () => {
-    let nextKey = previewKey + 1;
+  const getNextProject = (k?: number): ProjectProps => {
+    const key = k || previewKey;
+    let nextKey = key + 1;
     if (nextKey + 1 > projects?.length) nextKey = 0;
     const project = projects?.[nextKey];
     if (!project) return null;
-    const { previews } = project;
-    if (previews?.length > 0) {
-      return project;
-    } else {
-      return null;
-    }
+    const previews = project?.previews;
+    if (!previews?.length) return getNextProject(nextKey);
+    return project;
   };
   return (
     <div className="pt-6">
