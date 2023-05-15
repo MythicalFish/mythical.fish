@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About";
 import Attributes from "./Attributes";
 import Portfolio from "./Portfolio";
+import Preloader from "./Preloader";
 
 import { AllContent } from "pages";
 
@@ -31,6 +32,7 @@ const Layout: React.FC<Props> = ({ content }) => {
         </div>
       </div>
       <div id="modal" />
+      <Preloader projects={content.projects} />
     </>
   );
 };
