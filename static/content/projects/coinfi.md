@@ -30,6 +30,7 @@ previews:
     label: Newsfeed (mobile)
 privateCode: false
 visible: true
+date: Mar 2018 - Jul 2018
 ---
 I worked on the CoinFi platform for several months, cleaning up and refactoring their Rails codebase, as well as implementing the functional CSS framework Tachyons, and React via Webpacker. 
 

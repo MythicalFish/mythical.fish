@@ -13,7 +13,7 @@ links:
     url: https://github.com/MythicalFish/kaanjo-plugin
   - label: kaanjo.demo.fish
     url: https://kaanjo.demo.fish
-position: 2
+position: 4
 previews:
   - label: Homepage
     image: /content/images/kaanjo-1.jpg
@@ -25,6 +25,7 @@ previews:
     image: /content/images/kaanjo-4.jpg
 privateCode: false
 visible: true
+date: ~2016
 ---
 I built Kaanjo for a client in 2016, it consists of 2 parts: the JS plugin, and the Dashboard. 
 

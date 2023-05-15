@@ -9,7 +9,7 @@ tags:
 links:
   - label: uncharteddigital.nl
     url: https://uncharteddigital.nl
-position: 7
+position: 5
 previews:
   - label: Desktop frontend
     image: /content/images/uncharted-1.jpg
@@ -21,6 +21,7 @@ previews:
     image: /content/images/uncharted-admin-2.jpg
 privateCode: true
 visible: true
+date: ~2017
 ---
 For this project, a beautiful website was designed for me to implement in any way I saw fit.
 

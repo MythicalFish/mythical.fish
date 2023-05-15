@@ -10,7 +10,7 @@ tags:
 links:
   - label: phoa.demo.fish
     url: https://phoa.demo.fish
-position: 4
+position: 2
 previews:
   - label: Artwork overview
     image: /content/images/phoa-2.jpg
@@ -22,6 +22,7 @@ previews:
     image: /content/images/phoa-admin-1.jpg
 privateCode: true
 visible: true
+date: ~ 2015 - 2016
 ---
 The Public House of Art was the first big project I took on as a freelancer; I worked with them from the very beginning, and I built their entire online platform, as well as provided input on its design. 
 
