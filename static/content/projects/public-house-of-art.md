@@ -28,6 +28,6 @@ The Public House of Art was the first big project I took on as a freelancer; I w
 
 I built this website using Ruby on Rails, and Spree - the biggest, most supported ecommerce framework for Rails. Spree is rock-solid, and is totally customizable and extendable, which allowed me to create or modify features & functionality, in order to meet the client's specifications. These features included:
  
-- The ability to add & administer artists, and associate them with their product (artworks).
-- Their unique price-tiering system and mount options.
-- A customized checkout flow, and a totally custom integration with a small Dutch payment gateway provider.
+- Ability to add & administer artists, and associate them with their product (artwork)
+- Their unique price-tiering system and mount options
+- A customized checkout flow, and a totally custom integration with a small Dutch payment gateway provider

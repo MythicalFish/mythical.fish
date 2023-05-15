@@ -8,6 +8,8 @@ tags:
   - GraphQL
 links:
   - label: mythical.fish 
+    url: https://mythical.fish
+  - label: mythical.fish
     url: https://github.com/MythicalFish/mythical.fish
 position: 7
 previews:

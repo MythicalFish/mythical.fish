@@ -2,6 +2,7 @@ import React from "react";
 
 import LinkIcon from "../../assets/images/icons/link.svg";
 import LockIcon from "../../assets/images/icons/lock.svg";
+import Github from "../../assets/images/icons/github.svg";
 
 import { ProjectProps } from "types";
 
@@ -13,11 +14,19 @@ const Link: React.FC<{ url: string; label: string }> = (props) => {
   const { url, label } = props;
   return (
     <a href={url} target="_blank" className="project-link">
-      <LinkIcon
-        className="mr-2"
-        width={16}
-        style={{ position: "relative", top: "-1px" }}
-      />
+      {url.includes("github.com") ? (
+        <Github
+          width={15}
+          className="mr-2 text-rose-500"
+          style={{ position: "relative", top: "-1px" }}
+        />
+      ) : (
+        <LinkIcon
+          width={16}
+          className="mr-2 text-rose-500"
+          style={{ position: "relative", top: "-1px" }}
+        />
+      )}
       {label}
     </a>
   );
@@ -34,15 +43,13 @@ const ProjectLinks: React.FC<Props> = (props) => {
         links.length > 0 &&
         links.map((link, index) => <Link key={index} {...props} {...link} />)}
       {privateCode && (
-        <span className="project-link">
+        <span className="project-link text-zinc-600">
           <LockIcon
-            className="mr-2"
+            className="mr-2 opacity-90"
             width={16}
-            style={{ position: "relative", top: "-1px" }}
+            style={{ position: "relative", top: "-2px" }}
           />
-          <span className="text-zinc-600">
-            Code for this project is private
-          </span>
+          <span>Code for this project is private</span>
         </span>
       )}
     </div>

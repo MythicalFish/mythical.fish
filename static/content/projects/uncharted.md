@@ -21,7 +21,7 @@ previews:
     image: /content/images/uncharted-admin-2.jpg
 privateCode: true
 visible: true
-date: ~2017
+date: ~ 2017
 ---
 For this project, a beautiful website was designed for me to implement in any way I saw fit.
 

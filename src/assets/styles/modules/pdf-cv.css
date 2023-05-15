@@ -46,12 +46,12 @@ html.document {
     & .project-link {
       display: inline-flex;
       background-image: none;
-      @apply text-slate-500 p-2;
+      color: theme(colors.slate.500);
       font-size: 0.9em;
+      padding: 0.5em 0.8em 0.5em 0.5em;
       & svg {
         position: relative;
         top: 2px;
-        @apply text-rose-500;
       }
     }
     & a.project-link {
@@ -148,7 +148,15 @@ html.document {
       }
     }
   }
+  & ul {
+    &:not(:last-child) {
+      margin-bottom: 1em !important;
+    }
+  }
   & ul li:before {
     background-color: theme(colors.rose.500);
+  }
+  & p:last-child {
+    margin-bottom: 0;
   }
 }
