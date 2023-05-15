@@ -34,7 +34,7 @@ const Portfolio: React.FC<Props> = ({ projects }) => {
           showProject={showProject}
         />
       ))}
-      <Modal isOpen={previewKey !== null} closeFunc={() => showProject(null)}>
+      <Modal isOpen={previewKey !== null} closeFn={() => showProject(null)}>
         <Previewer
           project={projects?.[previewKey]}
           showProject={showProject}

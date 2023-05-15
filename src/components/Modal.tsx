@@ -1,18 +1,15 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
 
 import CloseIcon from "../assets/images/icons/x-mark.svg";
 
-type ModalContentProps = { children: React.ReactNode; closeFunc: () => void };
+type ModalContentProps = { children: React.ReactNode; closeFn: () => void };
 
-const ModalContent: React.FC<ModalContentProps> = ({ children, closeFunc }) => {
-  const handleClickOutside = useCallback(() => {
-    closeFunc();
-  }, []);
+const ModalContent: React.FC<ModalContentProps> = ({ children, closeFn }) => {
   return (
     <div className="modal-content">
       {children}
-      <button className="modal-close" onClick={handleClickOutside}>
+      <button className="modal-close" onClick={closeFn}>
         <CloseIcon width={18} />
       </button>
     </div>
@@ -21,13 +18,21 @@ const ModalContent: React.FC<ModalContentProps> = ({ children, closeFunc }) => {
 
 type ModalProps = {
   isOpen: boolean;
-  closeFunc: () => void;
+  closeFn: () => void;
   children: React.ReactNode;
 };
 
-const Modal: React.FC<ModalProps> = ({ closeFunc, isOpen, children }) => {
+const Modal: React.FC<ModalProps> = ({ closeFn, isOpen, children }) => {
+  const handleClickOutside = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (e.currentTarget !== e.target) return;
+      closeFn();
+    },
+    []
+  );
+
   const handleKeyPress = useCallback(({ keyCode }: { keyCode: number }) => {
-    if (keyCode === 27) closeFunc();
+    if (keyCode === 27) closeFn();
   }, []);
 
   useEffect(() => {
@@ -44,8 +49,8 @@ const Modal: React.FC<ModalProps> = ({ closeFunc, isOpen, children }) => {
   if (!isOpen || !modalContainer) return null;
 
   return ReactDOM.createPortal(
-    <div className="modal">
-      <ModalContent children={children} closeFunc={closeFunc} />
+    <div className="modal" onClick={handleClickOutside}>
+      <ModalContent children={children} closeFn={closeFn} />
     </div>,
     modalContainer
   );
