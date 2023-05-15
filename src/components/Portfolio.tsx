@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import Previewer from "./Previewer";
 import Project from "./Project";
@@ -11,6 +11,20 @@ type Props = {
 
 const Portfolio: React.FC<Props> = ({ projects }) => {
   const [previewKey, setPreviewKey] = useState(null);
+  const [projectID, setProjectID] = useState(null);
+  const ppID = projectID || previewKey;
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(false);
+    if (previewKey === null) return;
+    const delay = loaded ? 400 : 0;
+    setTimeout(() => {
+      setProjectID(previewKey);
+      setLoaded(true);
+    }, delay);
+  }, [previewKey]);
+
   const showProject = setPreviewKey;
   const getNextProject = () => {
     let nextKey = previewKey + 1;
@@ -34,9 +48,13 @@ const Portfolio: React.FC<Props> = ({ projects }) => {
           showProject={showProject}
         />
       ))}
-      <Modal isOpen={previewKey !== null} closeFn={() => showProject(null)}>
+      <Modal
+        isOpen={previewKey !== null}
+        loaded={loaded}
+        closeFn={() => showProject(null)}
+      >
         <Previewer
-          project={projects?.[previewKey]}
+          project={projects?.[ppID]}
           showProject={showProject}
           nextProject={getNextProject()}
         />

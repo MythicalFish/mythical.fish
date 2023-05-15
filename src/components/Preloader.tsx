@@ -24,10 +24,10 @@ const Preloader: React.FC<Props> = ({ projects }) => {
         opacity: 0,
       }}
     >
-      {projects?.map((project) => {
+      {projects?.map((project, i) => {
         const img = project.previews?.[0]?.image;
         if (!img) return null;
-        return <img src={img} />;
+        return <img src={img} key={i} />;
       })}
     </div>
   );

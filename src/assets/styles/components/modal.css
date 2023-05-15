@@ -9,6 +9,7 @@
   z-index: 999;
   background: rgba(0, 0, 0, 0.8);
   & .modal-content {
+    transition: all 0.4s;
     width: 100%;
     max-width: 102rem;
     align-self: center;
@@ -17,6 +18,14 @@
     position: relative;
     @apply rounded-sm;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  &.modalVisible {
+    & .modal-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 @screen sm {

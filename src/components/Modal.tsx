@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 
 import CloseIcon from "../assets/images/icons/x-mark.svg";
@@ -20,9 +20,10 @@ type ModalProps = {
   isOpen: boolean;
   closeFn: () => void;
   children: React.ReactNode;
+  loaded: boolean;
 };
 
-const Modal: React.FC<ModalProps> = ({ closeFn, isOpen, children }) => {
+const Modal: React.FC<ModalProps> = ({ loaded, closeFn, isOpen, children }) => {
   const handleClickOutside = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
       if (e.currentTarget !== e.target) return;
@@ -49,7 +50,10 @@ const Modal: React.FC<ModalProps> = ({ closeFn, isOpen, children }) => {
   if (!isOpen || !modalContainer) return null;
 
   return ReactDOM.createPortal(
-    <div className="modal" onClick={handleClickOutside}>
+    <div
+      className={loaded ? "modal modalVisible" : "modal"}
+      onClick={handleClickOutside}
+    >
       <ModalContent children={children} closeFn={closeFn} />
     </div>,
     modalContainer
