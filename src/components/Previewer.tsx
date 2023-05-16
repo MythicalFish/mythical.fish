@@ -53,51 +53,47 @@ const Previewer: React.FC<Props> = ({ project, showProject, nextProject }) => {
   const currentCount = currentKey + 1;
   const total = project.previews.length;
   return (
-    <div className="previewer bg-white text-zinc-900">
-      <div className="image-nav">
+    <div className="previewer">
+      <div className="previewer-img">
         {total > 1 && (
-          <Fragment>
+          <>
             <button className="nav-left" onClick={goLeft}>
               <ChevronLeft width={18} />
             </button>
             <button className="nav-right" onClick={goRight}>
               <ChevronRight width={18} />
             </button>
-          </Fragment>
+          </>
         )}
         <img src={current.image} className="block m-0" />
       </div>
-      <div className="flex-auto flex flex-col justify-between">
-        <div className="px-4 py-5">
-          <div className="mb-5">
-            <h3 className="mb-2 text-zinc-800">{project.title}</h3>
+      <div className="previewer-body">
+        <div className="previewer-panel">
+          <div className="mb-6">
+            <h3 className="mb-2">{project.title}</h3>
             <ProjectTags tags={project.tags} />
-          </div>
-          <div>
-            <div className="mb-3">
-              <h4 className="text-zinc-800 m-0 inline-block mr-2">
-                {current.label}
-              </h4>
-              {total > 1 && (
-                <span className="text-xs text-zinc-600">{`Image ${currentCount} of ${total}`}</span>
-              )}
+            <div className="mt-6 mb-2 text-sm text-zinc-400">
+              <span className="mr-1">{current.label}</span>
+              <span className="text-zinc-400">{`(Image ${currentCount} of ${total})`}</span>
             </div>
-            <Content className="text-sm mb-3">{current.description}</Content>
+            {!!current.description && (
+              <Content className="text-xs mb-6">{current.description}</Content>
+            )}
             <ProjectLinks
               project={project}
               showProject={showProject}
               hidePreviewLink
             />
           </div>
+          {nextProject && (
+            <div className="pt-6 text-right">
+              <button
+                className="btn btn-sm"
+                onClick={() => showProject(nextProject.key)}
+              >{`Next project: ${nextProject.title}`}</button>
+            </div>
+          )}
         </div>
-        {nextProject && (
-          <div className="px-4 py-5 text-right">
-            <button
-              className="btn btn-white btn-sm"
-              onClick={() => showProject(nextProject.key)}
-            >{`Next project: ${nextProject.title}`}</button>
-          </div>
-        )}
       </div>
     </div>
   );

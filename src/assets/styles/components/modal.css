@@ -7,7 +7,7 @@
   overflow-y: auto;
   display: grid;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.8);
+  background: #fff;
   & .modal-content {
     transition: all 0.4s;
     width: 100%;
@@ -16,7 +16,6 @@
     justify-self: center;
     overflow-wrap: break-word;
     position: relative;
-    @apply rounded-sm;
     overflow: hidden;
     opacity: 0;
     transform: translateY(5%);
@@ -42,12 +41,16 @@
     border: none;
     text-align: center;
     line-height: 1;
+    color: theme(colors.zinc.400);
     & svg {
-      fill: #fff;
+      display: inline-block;
     }
   }
 }
 @screen lg {
+  .modal {
+    background: rgba(0, 0, 0, 0.8);
+  }
   .modal-close {
     background: transparent;
     border: none;
@@ -58,5 +61,6 @@
     top: 0.5rem;
     right: 0.5rem;
     opacity: 0.4;
+    color: theme(colors.zinc.400);
   }
 }

@@ -1,22 +1,40 @@
 .previewer {
-  @apply flex;
-}
-@media (max-width: theme("screens.lg")) {
-  .previewer {
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  & .btn {
+    border: 1px solid theme(colors.zinc.800);
+  }
+  & .previewer-body {
+    position: relative;
+    flex: 1 1 auto;
+    margin: 10px 0 0 0;
+    & .previewer-panel {
+      padding: 20px;
+      border: 1px solid theme(colors.zinc.800);
+      background: theme(colors.zinc.900);
+      color: theme(colors.zinc.300);
+      border-radius: 8px;
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
 @screen lg {
   .previewer {
-    & > div {
-      &:first-child {
-        background: #000;
-        flex: auto;
-        min-height: 20rem;
-      }
-      &:last-child {
-        width: 440px;
-        flex: none;
+    flex-wrap: nowrap;
+    & .previewer-img {
+      flex: auto;
+      min-height: 20rem;
+    }
+    & .previewer-body {
+      margin: 0 0 0 8px;
+      width: 380px;
+      flex: none;
+      & .previewer-panel {
+        position: absolute;
+        inset: 0;
       }
     }
   }

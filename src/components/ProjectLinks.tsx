@@ -28,9 +28,7 @@ const ProjectLinks: React.FC<Props> = ({
     {privateCode && (
       <span className="icon-tag icon-tag-subtle">
         <span>
-          <span>
-            <LockIcon />
-          </span>
+          <LockIcon width={15} className="mr-1" />
           <span>Code is private</span>
         </span>
       </span>

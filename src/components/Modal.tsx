@@ -10,7 +10,7 @@ const ModalContent: React.FC<ModalContentProps> = ({ children, closeFn }) => {
     <div className="modal-content">
       {children}
       <button className="modal-close" onClick={closeFn}>
-        <CloseIcon width={18} />
+        <CloseIcon width={22} />
       </button>
     </div>
   );

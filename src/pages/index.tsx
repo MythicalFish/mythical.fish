@@ -11,7 +11,7 @@ import "../assets/styles/components/list.css";
 import "../assets/styles/components/modal.css";
 import "../assets/styles/components/theme.css";
 import "../assets/styles/components/previewer.css";
-import "../assets/styles/components/image-nav.css";
+import "../assets/styles/components/previewer-img.css";
 import "../assets/styles/utilities/responsive-padding.css";
 import "../assets/styles/utilities/sizing.css";
 import "../assets/styles/utilities/colors.css";

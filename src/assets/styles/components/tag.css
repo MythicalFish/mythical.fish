@@ -2,11 +2,12 @@
   margin: -0.2rem -0.15rem;
 }
 .tag {
-  @apply inline-block rounded-sm text-zinc-800 leading-none text-xs px-2 py-1;
+  @apply inline-block rounded-sm text-blue-400 leading-none text-xs px-2 py-1;
   font-weight: 500;
-  border: 1px solid theme(colors.gray.200);
+  border: 1px solid theme(colors.gray.800);
   margin: 0.2rem 0.15rem;
   text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
 }
 .icon-tag {
   @apply tag p-0;
