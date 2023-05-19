@@ -7,6 +7,10 @@ tags:
   - JS
   - Sass
 links:
+  - label: weavenote-api
+    url: https://github.com/MythicalFish/weavenote-api
+  - label: weavenote-front
+    url: https://github.com/MythicalFish/weavenote-front
 position: 8
 previews:
   - label: Project overview
@@ -19,7 +23,7 @@ previews:
     image: /content/images/weavenote-4.jpg
   - label: Collaborators
     image: /content/images/weavenote-6.jpg
-privateCode: true
+privateCode: false
 visible: true
 date: Apr 2017 - Feb 2018
 ---
