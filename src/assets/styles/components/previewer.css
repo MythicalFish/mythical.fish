@@ -2,7 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   & .btn {
-    border: 1px solid theme(colors.zinc.800);
+    border: 1px solid theme(colors.slate.700);
+    background: theme(colors.slate.900);
+    border-radius: 8px;
+    color: theme(colors.slate.400);
   }
   & .previewer-body {
     position: relative;
@@ -11,7 +14,7 @@
     & .previewer-panel {
       padding: 20px;
       border: 1px solid theme(colors.zinc.800);
-      background: theme(colors.zinc.900);
+      background: theme(colors.slate.800);
       color: theme(colors.zinc.300);
       border-radius: 8px;
       display: flex;
