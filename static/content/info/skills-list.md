@@ -5,25 +5,28 @@ key: skillsList
 itemList:
   - Typescript
   - Node.js
-  - GraphQl
-  - React
-  - React Native
   - Next.js
-  - GatsbyJS
+  - React
   - Redux
+  - GraphQl
   - PostCSS
   - Tailwind
-  - CI
+  - Docker
+  - React Native
+  - GatsbyJS
+  - Continuous Integration
+  - SSR
   - Jest
   - Ruby
   - Ruby on Rails
   - MySQL
+  - Postgres
+  - MongoDB
+  - Golang
   - Java
   - PHP
-  - Wordpress
   - Bash
   - Vim
   - Git
-  - Docker
 ---
 null

@@ -110,12 +110,27 @@ html.document {
     border-width: 2px;
     padding-top: 0.45rem;
   }
+  & .tag-cloud {
+    margin: -0.2rem -0.25rem;
+    & .tag {
+      line-height: 1;
+      padding: 0.35rem 0.6rem 0.25rem 0.6rem;
+      border-radius: 2px;
+      color: theme(colors.slate.100);
+      background: theme(colors.slate.600) !important;
+      border: none;
+      margin: 0.2rem 0.25rem;
+      position: relative;
+      border: 2px solid theme(colors.slate.600);
+    }
+  }
   & .tags {
     margin: -0.2rem -0.25rem;
     & .tag {
       padding: 0.25rem 0.6rem;
       border-radius: 0;
       color: theme(colors.slate.500);
+      background: #fff !important;
       border: none;
       margin: 0.2rem 0.25rem;
       position: relative;

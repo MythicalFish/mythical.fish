@@ -2,10 +2,11 @@
 type: project
 title: Cryptowatch
 tags:
-  - Typescript
   - React
+  - Typescript
+  - Next.js
+  - GraphQL
   - Tailwind
-  - Golang
 links:
   - label: cryptowat.ch
     url: https://cryptowat.ch

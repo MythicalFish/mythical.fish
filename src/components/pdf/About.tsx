@@ -20,11 +20,13 @@ const About: React.FC<Props> = ({ content }) => {
       <div className="px-10">
         <div className="box">
           <h3>Skills</h3>
-          {skillsList?.itemList?.map((item, key) => (
-            <span className="tag" key={key}>
-              {item}
-            </span>
-          ))}
+          <div className="tag-cloud">
+            {skillsList?.itemList?.map((item, key) => (
+              <span className="tag" key={key}>
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </>
