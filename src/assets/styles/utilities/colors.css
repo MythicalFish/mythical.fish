@@ -8,8 +8,14 @@
 .bg-linkedin {
   background: var(--linkedin);
 }
+.border-linkedin {
+  border-color: var(--linkedin);
+}
 .bg-github {
   background: var(--github);
+}
+.border-github {
+  border-color: var(--github);
 }
 .text-mirage {
   color: var(--mirage);

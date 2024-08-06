@@ -1,6 +1,7 @@
 import React from "react";
 import Github from "../assets/images/icons/github.svg";
 import LinkedIn from "../assets/images/icons/linkedin.svg";
+import Download from "../assets/images/icons/download2.svg";
 import jake from "../assets/images/jake-broughton-2.jpg";
 import Content from "./Content";
 
@@ -19,7 +20,7 @@ const About: React.FC<Props> = ({ bio }) => (
     <div className="text-2xl mb-4">jake@mythical.fish</div>
     <div className="-m-1">
       <a
-        className="btn m-1 bg-linkedin"
+        className="btn m-1 bg-linkedin border-linkedin"
         href="https://www.linkedin.com/in/jakebroughton/"
         target="_blank"
       >
@@ -27,12 +28,21 @@ const About: React.FC<Props> = ({ bio }) => (
         LinkedIn
       </a>
       <a
-        className="btn m-1 bg-github"
+        className="btn m-1 bg-github border-github"
         href="https://github.com/MythicalFish/"
         target="_blank"
       >
         <Github className="mr-2 inline-block -mt-1" width={18} />
         GitHub
+      </a>
+      <a
+        className="btn btn-grey m-1"
+        href="/content/jake-broughton_2023-05-15.pdf"
+        download
+        target="_blank"
+      >
+        <Download className="mr-2 inline-block -mt-1" width={18} />
+        CV
       </a>
     </div>
     <div className="mt-10">

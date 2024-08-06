@@ -12,7 +12,7 @@ button {
 }
 .btn {
   @apply py-3 px-4 rounded-sm inline-block leading-none;
-  border: none;
+  border: 1px solid white;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
   & svg {
@@ -22,7 +22,11 @@ button {
   }
   &.btn-white {
     @apply bg-white text-zinc-800;
-    border: 1px solid theme(colors.gray.500);
+  }
+  &.btn-grey {
+    @apply text-zinc-600;
+    background: #f7f7f7;
+    border-color: #ccc;
   }
   &.btn-sm {
     font-size: 0.9em;
